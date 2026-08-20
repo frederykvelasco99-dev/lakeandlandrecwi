@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: frederykvelasco99-dev/lakeandlandrecwi
+  branch: main
+
+media_folder: "photos/uploads"
+public_folder: "/photos/uploads"
+
+collections:
+  - name: "inventory"
+    label: "Inventory"
+    files:
+      - name: "units"
+        label: "All units"
+        file: "inventory.json"
+        format: "json"
+        fields:
+          - label: "Units"
+            name: "units"
+            widget: "list"
+            summary: "{{fields.stock}}  {{fields.model}}  ({{fields.status}})"
+            fields:
+              - { label: "ID (do not change)", name: "id", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["trailer","pontoon-trailer","pontoon"] }
+              - { label: "Model", name: "model", widget: "string" }
+              - { label: "Title / full name", name: "fullName", widget: "string", required: false }
+              - { label: "Year", name: "year", widget: "string", required: false }
+              - { label: "Stock #", name: "stock", widget: "string", required: false }
+              - { label: "Price (e.g. $2,830)", name: "price", widget: "string", required: false }
+              - { label: "Status", name: "status", widget: "select", options: ["In Stock","In Transit","Sold"] }
+              - { label: "VIN", name: "vin", widget: "string", required: false }
+              - { label: "Slug (photo name prefix)", name: "slug", widget: "string", required: false }
+              - { label: "Tag (e.g. Best Seller)", name: "tag", widget: "string", required: false }
+              - { label: "Description", name: "desc", widget: "text", required: false }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                field: { label: "Photo", name: "photo", widget: "image" }
+              - label: "Highlight chips"
+                name: "chips"
+                widget: "list"
+                required: false
+                field: { label: "Chip", name: "chip", widget: "string" }
+              - label: "Specs (label + value)"
+                name: "specs"
+                widget: "list"
+                required: false
+                field:
+                  label: "Row"
+                  name: "row"
+                  widget: "list"
+                  field: { label: "Text", name: "text", widget: "string" }
+              - { label: "SEO title", name: "seoTitle", widget: "string", required: false }
+              - { label: "SEO description", name: "seoDesc", widget: "text", required: false }
