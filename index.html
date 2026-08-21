@@ -436,6 +436,22 @@
   .ug-thumb{flex:0 0 auto;width:78px;height:60px;border-radius:6px;overflow:hidden;border:2px solid transparent;background:#E3E3DE;padding:0;cursor:pointer;}
   .ug-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
   .ug-thumb.active{border-color:var(--rust);}
+
+  .ug-main{box-shadow:0 6px 20px rgba(18,34,23,0.12);}
+  .ug-main img{cursor:zoom-in;}
+  .lb-overlay{position:fixed;inset:0;background:rgba(10,15,8,0.93);z-index:9999;display:none;align-items:center;justify-content:center;}
+  .lb-overlay.open{display:flex;}
+  .lb-overlay img{max-width:92vw;max-height:84vh;object-fit:contain;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,0.5);}
+  .lb-close{position:absolute;top:16px;right:22px;background:none;border:none;color:#fff;font-size:38px;line-height:1;cursor:pointer;}
+  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.14);border:none;color:#fff;width:54px;height:54px;border-radius:50%;font-size:30px;cursor:pointer;}
+  .lb-arrow:hover{background:var(--rust);}
+  .lb-arrow.prev{left:16px;} .lb-arrow.next{right:16px;}
+  .lb-cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#fff;font-family:'Oswald',sans-serif;letter-spacing:0.04em;font-size:14px;}
+
+  .inv-badge.pending{background:var(--blue);}
+
+  .inv-badge.used{background:#8A5A00;}
+  .inv-badge.new{background:#2F4A26;}
 </style>
 </head>
 <body>
@@ -2083,11 +2099,12 @@ function ugSet(i){
 function ugGo(d){ var st=window._ug; if(!st) return; ugSet((st.i+d+st.items.length)%st.items.length); }
 
 function invRow(u){
-  var sc=(u.status==='In Stock')?'instock':(u.status==='In Transit'?'transit':'sold');
+  var sc=stClass(u.status);
   var stock=u.stock||'\u2014';
   var it0=photoItems(u)[0];
   var thumb='<img class="inv-thumb" src="'+it0.full+'" data-base="'+(it0.base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="showUnit(\''+u.id+'\')" alt="'+esc(u.stock||u.model)+' photo">';
   var tag=u.tag?(' <span class="inv-badge hot">'+u.tag+'</span>'):'';
+  var used=(u.condition==='Used')?(' <span class="inv-badge used">Used</span>'):'';
   var priceCell=u.price?(u.price+' + tax'):'Call';
   var btn;
   if(u.status==='In Stock') btn='<button class="inv-reserve" onclick="openReserve(\''+esc(u.stock)+'\',\''+esc(u.model)+'\',\''+esc(u.price)+'\')">Reserve</button>';
@@ -2098,7 +2115,7 @@ function invRow(u){
     +'<td><a onclick="showUnit(\''+u.id+'\')" class="inv-model-link">'+u.model+'</a></td>'
     +'<td>'+(u.year||'\u2014')+'</td>'
     +'<td class="inv-stock">'+stock+'</td>'
-    +'<td><span class="inv-badge '+sc+'">'+u.status+'</span>'+tag+'</td>'
+    +'<td><span class="inv-badge '+sc+'">'+u.status+'</span>'+tag+used+'</td>'
     +'<td class="inv-price">'+priceCell+'</td>'
     +'<td>'+btn+'</td></tr>';
 }
@@ -2106,7 +2123,7 @@ function renderInvGrid(list){
   var groups=[["trailer","Utility Trailers \u2014 Trophy"],["pontoon-trailer","Pontoon Trailers \u2014 Trophy"],["pontoon","Pontoon Boats \u2014 Flagship & Lake Lounger"]];
   var html='';
   groups.forEach(function(g){
-    var rows=list.filter(function(u){return u.category===g[0];});
+    var rows=list.filter(function(u){return u.category===g[0] && u.active!==false;});
     if(!rows.length) return;
     html+='<div class="inv-group" data-group="'+g[0]+'"><h3 class="inv-group-title">'+g[1]+'</h3><div class="table-scroll"><table class="inv-table"><thead><tr><th></th><th>Model</th><th>Year</th><th>Stock#</th><th>Status</th><th>Price</th><th></th></tr></thead><tbody>';
     rows.forEach(function(u){ html+=invRow(u); });
@@ -2120,13 +2137,73 @@ function buildInventory(list){
   renderInvGrid(list);
 }
 
+function setUnitLd(u){
+  var old=document.getElementById('unitLd'); if(old && old.parentNode) old.parentNode.removeChild(old);
+  var avail = (u.status==='In Stock') ? 'InStock' : (u.status==='Sold' ? 'SoldOut' : 'PreOrder');
+  var price = (u.price||'').replace(/[^0-9.]/g,'');
+  var ld = {"@context":"https://schema.org","@type":"Product","name":(u.fullName||u.model),
+    "sku":(u.stock||u.id),"mpn":u.id,"brand":{"@type":"Brand","name":"Trophy Trailers"},
+    "category":"Aluminum Trailer","description":(u.seoDesc||u.desc||''),
+    "offers":{"@type":"Offer","priceCurrency":"USD","price":(price||"0"),
+      "availability":"https://schema.org/"+avail,"itemCondition":"https://schema.org/"+((u.condition==='Used')?'UsedCondition':'NewCondition'),
+      "seller":{"@type":"AutoDealer","name":"Lake & Land Rec LLC","telephone":"+1-715-797-4782",
+        "address":{"@type":"PostalAddress","streetAddress":"837 West 3rd Street","addressLocality":"Owen","addressRegion":"WI","postalCode":"54460","addressCountry":"US"}}}};
+  var sc=document.createElement('script'); sc.type='application/ld+json'; sc.id='unitLd';
+  sc.textContent=JSON.stringify(ld); document.head.appendChild(sc);
+}
+function openLightbox(i){
+  var st=window._ug; if(!st) return; window._lb=i;
+  var img=document.getElementById('lbImg'); if(!img) return;
+  img.onerror=function(){this.onerror=null;this.src=GAL_PH;}; img.src=st.items[i].full;
+  var cap=document.getElementById('lbCap'); if(cap) cap.textContent=(i+1)+' / '+st.items.length;
+  document.getElementById('lbOverlay').classList.add('open');
+}
+function closeLightbox(){ var o=document.getElementById('lbOverlay'); if(o) o.classList.remove('open'); }
+function lbGo(d){ var st=window._ug; if(!st) return; openLightbox((window._lb+d+st.items.length)%st.items.length); }
+
+function stClass(s){ return s==='In Stock'?'instock':s==='In Transit'?'transit':s==='Sale Pending'?'pending':'sold'; }
+function specMap(u){ var m={}; (u.specs||[]).forEach(function(r){ if(r&&r.length>=2) m[r[0]]=r[1]; }); return m; }
+function _cap(s){ return s? s.charAt(0).toUpperCase()+s.slice(1):s; }
+function _join(a){ if(a.length===1)return a[0]; if(a.length===2)return a[0]+' and '+a[1]; return a.slice(0,-1).join(', ')+', and '+a[a.length-1]; }
+function _hash(s){ var h=0; s=s||''; for(var i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;} return h; }
+function buildDesc(u){
+  var m=specMap(u);
+  var size=m['Size']||'', year=(u.year||m['Year']||'').replace(' (new)','');
+  var axle=m['Axles']||m['Axle']||'', gvwr=m['GVWR']||'', deck=m['Deck']||'', ramp=m['Ramp']||'', sides=m['Sides']||'', constr=m['Construction']||'All-aluminum';
+  var cat=u.category;
+  var kind = cat==='pontoon-trailer' ? 'Trophy pontoon trailer' : (cat==='pontoon' ? 'pontoon' : 'Trophy aluminum utility trailer');
+  var h=_hash(u.stock||u.id||u.model);
+  var openers=['built to work and built to last.','ready to earn its keep.','a workhorse that still looks sharp.','made for real Wisconsin hauling.','the kind of trailer you buy once.'];
+  var uses;
+  if(cat==='pontoon-trailer') uses=['Set up to haul your pontoon and launch without a fight.'];
+  else if(cat==='pontoon') uses=['Rigged for easy days on the water.'];
+  else uses=['Great for UTVs, mowers, motorcycles, or yard work.','Sized right for a side-by-side, mower, or a load of gear.','Perfect for hauling around the property or to the job site.','Handles ATVs, equipment, and everything in between.'];
+  var parts=[];
+  parts.push('This '+(year?year+' ':'')+(size?size+' ':'')+kind+' is '+openers[h%openers.length]);
+  var feat=[];
+  if(sides) feat.push(sides.toLowerCase());
+  if(deck) feat.push(deck.toLowerCase()+' deck');
+  if(ramp) feat.push(ramp.toLowerCase()+' ramp');
+  parts.push(feat.length ? (_cap(constr)+' with '+_join(feat)+'.') : (_cap(constr)+' build.'));
+  var ride='';
+  if(axle) ride+=axle.toLowerCase();
+  if(gvwr) ride+=(ride?' and ':'')+gvwr+' GVWR';
+  if(ride) parts.push(_cap(ride)+'.');
+  parts.push(uses[h%uses.length]);
+  parts.push('Rust-free aluminum, in stock in Owen, WI.');
+  return parts.join(' ');
+}
+
 function showUnit(id){
   var u = UNITS[id];
   if(!u){ goHomeAndJump('inventory'); return; }
   document.title = u.seoTitle || (u.fullName+' | Lake & Land Rec');
   var md = document.querySelector('meta[name="description"]');
   if(md && u.seoDesc) md.setAttribute('content', u.seoDesc);
-  var statusClass = (u.status==='In Stock') ? 'instock' : (u.status==='In Transit' ? 'transit' : 'sold');
+  setUnitLd(u);
+  var _desc = (u.category==='pontoon') ? (u.desc||buildDesc(u)) : buildDesc(u);
+  if(u.condition==='Used'){ _desc = _desc.replace(/\(new\)/gi,'').replace('Rust-free aluminum, in stock','Clean used unit, in stock'); }
+  var statusClass = stClass(u.status);
 
   var items = photoItems(u);
   window._ug = { items: items, i: 0 };
@@ -2136,13 +2213,14 @@ function showUnit(id){
   var galleryHtml =
       '<div class="unit-gallery"><div class="ug-main">'
     +   '<button class="ug-arrow prev" onclick="ugGo(-1)" aria-label="Previous photo">\u2039</button>'
-    +   '<img id="ugMain" src="'+items[0].full+'" data-base="'+(items[0].base||'')+'" data-i="1" onerror="imgFallback(this)" alt="'+esc(u.fullName)+'">'
+    +   '<img id="ugMain" src="'+items[0].full+'" data-base="'+(items[0].base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="openLightbox(window._ug?window._ug.i:0)" alt="'+esc(u.fullName)+'">'
     +   '<button class="ug-arrow next" onclick="ugGo(1)" aria-label="Next photo">\u203a</button>'
     +   '</div><div class="ug-thumbs">'+thumbs+'</div></div>';
 
   var chips = (u.chips||[]).map(function(c){ return '<div class="highlight-chip">'+c+'</div>'; }).join('');
   var specs = (u.specs||[]).map(function(r){ return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'; }).join('');
   var vin4 = u.vin ? (' \u00b7 VIN \u2026'+(''+u.vin).slice(-4)) : '';
+  var condBadge = (u.condition==='Used') ? ' <span class="inv-badge used">Used</span>' : ' <span class="inv-badge new">New</span>';
   var priceHtml = u.price ? (u.price+' <small>+ tax</small>') : '<small>Call for price</small>';
   var ctaLabel = (u.status==='In Stock') ? ('Reserve #'+id) : (u.status==='Sold' ? 'Contact for similar' : 'Notify Me');
   var ctaStock = (u.status==='In Stock') ? id : u.status;
@@ -2162,11 +2240,11 @@ function showUnit(id){
 
   document.getElementById('page-unit').innerHTML =
       '<div class="detail-hero"><div class="tag">Trophy Trailers \u00b7 '+(u.year||'')+(u.year?' \u00b7 ':'')+u.status+'</div>'
-    +   '<h1>'+(u.fullName||u.model)+'</h1><p>'+(u.desc||'')+'</p></div>'
+    +   '<h1>'+(u.fullName||u.model)+'</h1><p>'+_desc+'</p></div>'
     + '<div class="section">'
     +   '<div class="detail-nav"><div class="breadcrumb"><a onclick="goHomeAndJump(\'inventory\')">\u2190 Back to inventory</a></div>'
     +   '<div class="subnav"><a onclick="goHomeAndJump(\'inventory\')">All inventory</a></div></div>'
-    +   '<div class="unit-head"><div><span class="inv-badge '+statusClass+'">'+u.status+'</span> <span class="unit-stock">Stock '+(u.stock?('#'+u.stock):'TBD')+vin4+'</span></div>'
+    +   '<div class="unit-head"><div><span class="inv-badge '+statusClass+'">'+u.status+'</span>'+condBadge+' <span class="unit-stock">Stock '+(u.stock?('#'+u.stock):'TBD')+vin4+'</span></div>'
     +     '<div class="unit-price">'+priceHtml+'</div></div>'
     +   galleryHtml
     +   '<div class="highlight-row">'+chips+'</div>'
@@ -2354,5 +2432,12 @@ function submitAppt(e){
 }
 </script>
 
+<div class="lb-overlay" id="lbOverlay" onclick="if(event.target===this)closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Close">×</button>
+  <button class="lb-arrow prev" onclick="lbGo(-1)" aria-label="Previous photo">‹</button>
+  <img id="lbImg" src="" alt="Trailer photo">
+  <button class="lb-arrow next" onclick="lbGo(1)" aria-label="Next photo">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
 </body>
 </html>
