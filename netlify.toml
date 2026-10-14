@@ -1,0 +1,12 @@
+# Netlify build settings.
+# The site itself is plain HTML (no build needed). The command below only refreshes
+# facebook-feed.csv from inventory.json so the Facebook catalog always matches the site.
+[build]
+  publish = "."
+  command = "node tools/build-feed.js"
+
+[[headers]]
+  for = "/facebook-feed.csv"
+  [headers.values]
+    Content-Type = "text/csv; charset=utf-8"
+    Cache-Control = "public, max-age=300"

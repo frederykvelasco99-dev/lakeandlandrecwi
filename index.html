@@ -143,6 +143,16 @@
   .tab.active{background:var(--panel);border-color:var(--panel);color:#fff;}
 
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px;}
+  .incoming-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px;}
+  .incoming-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;}
+  .incoming-ph{position:relative;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,#0F2C42 0 14px,#0A1826 14px 28px);display:grid;place-items:center;}
+  .incoming-ph-txt{color:#c9d6e3;font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:15px;border:1.5px dashed rgba(255,255,255,.35);padding:10px 16px;border-radius:10px;}
+  .incoming-badge{position:absolute;top:12px;left:12px;background:var(--rust);color:#fff;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;}
+  .incoming-body{padding:16px 18px 20px;}
+  .incoming-body h3{font-family:'Oswald',sans-serif;font-weight:600;font-size:20px;margin:6px 0 6px;}
+  .incoming-body p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5;}
+  .incoming-pending{display:inline-block;font-size:12px;font-weight:600;color:var(--rust-dark);text-transform:uppercase;letter-spacing:.05em;}
+  .incoming-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px;}
   .inv-group{margin-top:32px;}
   .inv-group-title{font-family:'Oswald',sans-serif;font-size:19px;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rust);}
   .inv-table{width:100%;border-collapse:collapse;font-size:13.5px;}
@@ -780,17 +790,27 @@
   <div class="section-head">
     <div>
       <h2>Inventory</h2>
-      <p>We're restocking right now, with more trailers and pontoons on the way. Call or text for current availability and pricing on Trophy aluminum trailers, pontoon trailers, Lake Lounger pontoons, and Flagship pontoons.</p>
+      <p>Fresh photos are coming this week, and the new 2027 models are on the way. Here's what's landing in Owen. Want first pick? Text us and we'll send photos and prices the minute they hit the lot.</p>
     </div>
   </div>
-  <div class="store-banner" style="text-align:center;">
-    <h2 style="color:#fff;margin:0 0 8px;">Call for availability &amp; pricing</h2>
-    <p style="color:#fff;opacity:0.9;max-width:600px;margin:0 auto 10px;">One call is all it takes. Tell us what you're hauling or where you're boating, and we'll line you up with the right unit.</p>
-    <p style="color:#F0C98A;font-weight:600;max-width:600px;margin:0 auto 18px;">Ask about this month's specials on Trophy aluminum trailers and pontoons in Owen, WI.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a class="btn-primary" href="tel:7157974782" style="background:var(--rust);color:#fff;">Call 715-797-4782</a>
-      <a class="callbtn-outline" href="sms:7157974782" style="border-color:#fff;color:#fff;">Text us</a>
+  <div id="invGrid"></div>
+  <div class="incoming-grid" id="incomingCards">
+    <div class="incoming-card">
+      <div class="incoming-ph"><span class="incoming-badge">Incoming</span><span class="incoming-ph-txt">Photos coming soon</span></div>
+      <div class="incoming-body"><span class="incoming-pending">Pending · 2027 models</span><h3>Trophy aluminum utility trailers</h3><p>5x8 to 7x20, tip-in ramps, diamond plate and open rail. Built for UTVs, mowers, sleds and yard work.</p></div>
     </div>
+    <div class="incoming-card">
+      <div class="incoming-ph"><span class="incoming-badge">Incoming</span><span class="incoming-ph-txt">Photos coming soon</span></div>
+      <div class="incoming-body"><span class="incoming-pending">Pending · 2027 models</span><h3>Trophy pontoon trailers</h3><p>18 to 25 ft, bunk and fold-down styles, sized to fit Lake Lounger and Flagship pontoons.</p></div>
+    </div>
+    <div class="incoming-card">
+      <div class="incoming-ph"><span class="incoming-badge">Incoming</span><span class="incoming-ph-txt">Photos coming soon</span></div>
+      <div class="incoming-body"><span class="incoming-pending">Pending · 2027 models</span><h3>Flagship &amp; Lake Lounger pontoons</h3><p>Suzuki-powered pontoons for fishing, cruising and family days on the water.</p></div>
+    </div>
+  </div>
+  <div class="incoming-cta">
+    <a class="btn-primary" href="sms:7157974782" style="background:var(--rust);color:#fff;">Text me when they land</a>
+    <a class="callbtn-outline" href="tel:7157974782">Call 715-797-4782</a>
   </div>
 </section>
 
@@ -2088,7 +2108,9 @@ function initSpinBanner(){
 function loadInventory(){
   fetch('inventory.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
     var list=(data&&data.units)?data.units:(Array.isArray(data)?data:[]);
-    if(list.length){ buildInventory(list); }
+    list=list.filter(function(u){return u.active!==false && u.status!=='Sold';});
+    if(list.length){ buildInventory(list); var ic=document.getElementById('incomingCards'); if(ic) ic.style.display='none'; }
+    if(/^#unit-/.test(location.hash||'')){ var hid=decodeURIComponent(location.hash.slice(6)); if(UNITS[hid]) showUnit(hid); }
     initSpinBanner();
   }).catch(function(){ initSpinBanner(); });
 }
