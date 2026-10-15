@@ -10,3 +10,9 @@
   [headers.values]
     Content-Type = "text/csv; charset=utf-8"
     Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/setup/*.mobileconfig"
+  [headers.values]
+    Content-Type = "application/x-apple-aspen-config"
+    X-Robots-Tag = "noindex"
