@@ -11,6 +11,8 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.lakeandlandrec.com/logo.png">
 <meta property="og:url" content="https://www.lakeandlandrec.com">
+<script src="/js/llr-analytics.js" defer></script>
+<script src="/js/llr-forms.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -2288,7 +2290,7 @@ function loadInventory(){
 }
 if(document.readyState!=='loading') loadInventory(); else document.addEventListener('DOMContentLoaded', loadInventory);
 
-function setCookieChoice(v){ try{localStorage.setItem('llr_cookie_consent',v);}catch(e){} var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+function setCookieChoice(v){ try{localStorage.setItem('llr_cookie_consent',v);}catch(e){} if(window.llrConsent) llrConsent(v); var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
 function initCookieBar(){ var show=true; try{ if(localStorage.getItem('llr_cookie_consent')) show=false; }catch(e){} if(show){ var b=document.getElementById('cookieBar'); if(b) b.classList.add('show'); } }
 if(document.readyState!=='loading') initCookieBar(); else document.addEventListener('DOMContentLoaded', initCookieBar);
 
@@ -2359,6 +2361,8 @@ function encodeFormData(data){
 }
 
 function netlifySubmit(formName, data){
+  if(window.llrTrack) llrTrack('generate_lead', {method:'form', form_name: formName});
+  if(window.llrEmailCopy) llrEmailCopy(formName, data);
   // Submits to Netlify Forms. Only works once this site is deployed on Netlify —
   // opening the file locally or hosting elsewhere will just show the success message without sending data.
   return fetch('/', {
