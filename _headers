@@ -1,0 +1,13 @@
+/facebook-feed.csv
+  Content-Type: text/csv; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/setup/*
+  Content-Type: application/x-apple-aspen-config
+  X-Robots-Tag: noindex
+
+/admin/*
+  X-Robots-Tag: noindex
+
+/tools/*
+  X-Robots-Tag: noindex
