@@ -486,6 +486,37 @@
 
   .legal-strip{background:#0D1809;color:#8A9484;padding:18px 20px 6px;text-align:center;}
   .legal-note{max-width:900px;margin:0 auto 10px;font-size:11px;line-height:1.6;}
+  .lot{padding:26px 0 10px;background:#fff;border-bottom:1px solid var(--line);}
+  .lot-head{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;}
+  .lot-eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rust-dark);}
+  .lot h2{font-family:'Oswald',sans-serif;font-size:clamp(26px,6vw,36px);text-transform:uppercase;margin:2px 0 0;line-height:1.05;}
+  .lot-all{font-weight:600;font-size:14px;color:var(--panel);cursor:pointer;white-space:nowrap;text-decoration:underline;}
+  .lot-chips{max-width:1200px;margin:12px auto 0;padding:0 20px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;}
+  .lot-chips::-webkit-scrollbar{display:none}
+  .lot-chips button{flex:none;border:1px solid var(--line);background:#fff;border-radius:20px;padding:7px 14px;font:600 13px 'Inter',sans-serif;color:var(--ink);cursor:pointer;}
+  .lot-chips button[aria-pressed="true"]{background:var(--panel);border-color:var(--panel);color:#fff;}
+  .lot-wrap{position:relative;max-width:1200px;margin:12px auto 0;}
+  .lot-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;padding:4px 20px 14px;scrollbar-width:none;}
+  .lot-track::-webkit-scrollbar{display:none}
+  .lot-card{flex:0 0 82%;max-width:340px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.06);display:flex;flex-direction:column;}
+  @media(min-width:700px){.lot-card{flex-basis:300px;}}
+  .lot-ph{position:relative;aspect-ratio:4/3;background:#e3e3de;}
+  .lot-ph img{width:100%;height:100%;object-fit:cover;display:block;}
+  .lot-tag{position:absolute;left:10px;top:10px;background:var(--rust);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:3px;}
+  .lot-n{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:600;padding:3px 8px;border-radius:20px;}
+  .lot-bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:3px;flex:1;}
+  .lot-sz{font-family:'Oswald',sans-serif;font-size:21px;text-transform:uppercase;line-height:1.1;}
+  .lot-md{font-size:13px;color:var(--muted);line-height:1.35;}
+  .lot-pr{font-family:'Oswald',sans-serif;font-size:24px;margin-top:6px;}
+  .lot-pr s{font-size:15px;color:var(--muted);margin-right:6px;}
+  .lot-pr small{font-family:'Inter',sans-serif;font-size:12px;color:var(--muted);}
+  .lot-go{margin-top:8px;font-weight:700;font-size:14px;color:var(--rust-dark);}
+  .lot-arrow{display:none;position:absolute;top:38%;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.15);}
+  .lot-arrow.prev{left:4px}.lot-arrow.next{right:4px}
+  @media(hover:hover) and (min-width:900px){.lot-arrow{display:block}}
+  .lot-cta{max-width:1200px;margin:4px auto 0;padding:0 20px 8px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;}
+  .lot-call{background:var(--rust);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:5px;}
+  .lot-cta span{font-size:13px;color:var(--muted);}
   .tc-card{max-width:760px;margin:0 auto 14px;text-align:left;background:#15240f;border:1px solid #2c3d24;border-radius:8px;}
   .tc-card summary{cursor:pointer;list-style:none;padding:11px 16px;color:#CFCBBE;font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;}
   .tc-card summary::-webkit-details-marker{display:none}
@@ -682,6 +713,20 @@
   </div>
 </section>
 
+<section class="lot" id="on-the-lot" aria-labelledby="lotH">
+  <div class="lot-head">
+    <div><div class="lot-eyebrow">Real photos · Real prices · Owen, WI</div><h2 id="lotH">On our lot today</h2></div>
+    <a class="lot-all" onclick="goHomeAndJump('inventory')">See all <span id="lotCount"></span> &rarr;</a>
+  </div>
+  <div class="lot-chips" id="lotChips" role="group" aria-label="Filter by size"></div>
+  <div class="lot-wrap">
+    <button class="lot-arrow prev" type="button" aria-label="Previous trailers" onclick="lotGo(-1)">&lsaquo;</button>
+    <div class="lot-track" id="lotTrack" aria-live="off"></div>
+    <button class="lot-arrow next" type="button" aria-label="More trailers" onclick="lotGo(1)">&rsaquo;</button>
+  </div>
+  <div class="lot-cta"><a class="lot-call" href="tel:7157974782">Call today: 715-797-4782</a><span>Every price is plus tax. No hidden fees.</span></div>
+</section>
+
 <div class="cats">
   <div class="cat" id="land">
     <div class="tag">Land</div>
@@ -720,10 +765,10 @@
 
 <section class="promo-section">
   <div class="promo-carousel" id="promoCarousel">
-    <a class="promo-slide active" href="#unit-PT1797" onclick="if(window.UNITS&&UNITS['PT1797']){showUnit('PT1797');return false;}"><img src="photos/promo-1.jpg" loading="lazy" alt="Lake & Land Rec pontoon trailer in Owen WI, time to move your pontoon out of the water"></a>
-    <a class="promo-slide" href="#unit-YT001" onclick="if(window.UNITS&&UNITS['YT001']){showUnit('YT001');return false;}"><img src="photos/promo-2.jpg" loading="lazy" alt="Wisconsin best seller Trophy aluminum trailer, brand new, $800 plus tax, Lake & Land Rec"></a>
+    <a class="promo-slide active" href="/inventory/pt1797/"><img src="photos/promo-1.jpg" loading="lazy" alt="Lake & Land Rec pontoon trailer in Owen WI, time to move your pontoon out of the water"></a>
+    <a class="promo-slide" href="/inventory/yt001/"><img src="photos/promo-2.jpg" loading="lazy" alt="Wisconsin best seller Trophy aluminum trailer, brand new, $800 plus tax, Lake & Land Rec"></a>
     <a class="promo-slide" href="#appointment"><img src="photos/promo-3.jpg" loading="lazy" alt="Flagship pontoon boat at Lake & Land Rec, lake life starts here"></a>
-    <a class="promo-slide" href="#unit-T2161" onclick="if(window.UNITS&&UNITS['T2161']){showUnit('T2161');return false;}"><img src="photos/promo-4.jpg" loading="lazy" alt="6.5 by 12 aluminum utility trailer, 2,990 lb GVWR, available now at Lake & Land Rec"></a>
+    <a class="promo-slide" href="/inventory/t2161/"><img src="photos/promo-4.jpg" loading="lazy" alt="6.5 by 12 aluminum utility trailer, 2,990 lb GVWR, available now at Lake & Land Rec"></a>
     <button class="promo-arrow prev" aria-label="Previous promo">‹</button>
     <button class="promo-arrow next" aria-label="Next promo">›</button>
     <div class="promo-dots" id="promoDots"></div>
@@ -1985,7 +2030,7 @@ function invRow(u){
   var sc=stClass(u.status);
   var stock=u.stock||'\u2014';
   var it0=photoItems(u)[0];
-  var thumb='<img class="inv-thumb" loading="lazy" src="'+(it0.thumb||it0.full)+'" data-base="'+(it0.base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="showUnit(\''+u.id+'\')" alt="'+esc(u.stock||u.model)+' photo">';
+  var thumb='<img class="inv-thumb" loading="lazy" src="'+(it0.thumb||it0.full)+'" data-base="'+(it0.base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="location.href=unitUrl(UNITS[\''+u.id+'\'])" alt="'+esc(u.stock||u.model)+' photo">';
   var tag=u.tag?(' <span class="inv-badge hot">'+u.tag+'</span>'):'';
   var used=(u.condition==='Used')?(' <span class="inv-badge used">Used</span>'):'';
   var priceCell=u.price?((u.wasPrice?'<span class="inv-was">'+u.wasPrice+'</span> ':'')+u.price+' + tax'):'Call';
@@ -1995,7 +2040,7 @@ function invRow(u){
   else btn='<button class="inv-reserve transit" onclick="openReserve(\'In Transit\',\''+esc(u.model)+'\',\'Notify when in stock\')">Notify Me</button>';
   return '<tr class="inv-row'+(u.tag?' is-hot':'')+'" data-type="'+u.category+'">'
     +'<td class="inv-thumb-cell">'+thumb+'</td>'
-    +'<td><a onclick="showUnit(\''+u.id+'\')" class="inv-model-link">'+u.model+'</a></td>'
+    +'<td><a href="'+unitUrl(u)+'" class="inv-model-link">'+u.model+'</a></td>'
     +'<td>'+(u.year||'\u2014')+'</td>'
     +'<td class="inv-stock">'+stock+'</td>'
     +'<td><span class="inv-badge '+sc+'">'+u.status+'</span>'+tag+used+'</td>'
@@ -2014,10 +2059,56 @@ function renderInvGrid(list){
   });
   var g=document.getElementById('invGrid'); if(g) g.innerHTML=html;
 }
+var LOT_SIZE='all', LOT_TIMER=null;
+function unitUrl(u){ return '/inventory/'+String(u.slug||u.id).toLowerCase()+'/'; }
+function lotList(){
+  var l=UNIT_ORDER.map(function(id){return UNITS[id];}).filter(function(u){return u && u.status==='In Stock' && u.photos && u.photos.length;});
+  if(LOT_SIZE!=='all') l=l.filter(function(u){ return LOT_SIZE==='pontoon' ? u.category!=='trailer' : u.size===LOT_SIZE; });
+  return l.filter(function(u){return u.wasPrice;}).concat(l.filter(function(u){return !u.wasPrice;}));
+}
+function renderLot(){
+  var tr=document.getElementById('lotTrack'); if(!tr) return;
+  var all=UNIT_ORDER.map(function(id){return UNITS[id];}).filter(function(u){return u && u.status==='In Stock';});
+  var sizes=[]; all.forEach(function(u){ if(u.category==='trailer' && u.size && sizes.indexOf(u.size)<0) sizes.push(u.size); });
+  var hasP=all.some(function(u){return u.category!=='trailer';});
+  var ch=[['all','All']].concat(sizes.map(function(z){return [z,z];})); if(hasP) ch.push(['pontoon','Pontoon']);
+  document.getElementById('lotChips').innerHTML=ch.map(function(c){return '<button type="button" aria-pressed="'+(c[0]===LOT_SIZE)+'" onclick="lotFilter(\''+c[0]+'\')">'+c[1]+'</button>';}).join('');
+  var lc=document.getElementById('lotCount'); if(lc) lc.textContent=all.length;
+  tr.innerHTML=lotList().map(function(u,i){
+    var img=(u.photos[0]);
+    var tag=u.tag?'<span class="lot-tag">'+escH(u.tag)+'</span>':'';
+    var sz=u.category==='trailer'?(u.size||'').replace('x',' x ')+' ft':(u.category==='pontoon'?'Pontoon':'Pontoon trailer');
+    var md=u.category==='trailer'?(u.model||'').replace(/^[\d.]+x[\d.]+\s*/,''):(u.model||'').replace(/ Aluminum Pontoon Trailer$/,' pontoons, aluminum');
+    return '<a class="lot-card" href="'+unitUrl(u)+'" aria-label="'+escH((u.fullName||u.model)+', '+u.price+' plus tax')+'">'
+      +'<div class="lot-ph"><img src="'+img+'" alt="'+escH(u.fullName||u.model)+'" '+(i<2?'':'loading="lazy"')+' width="1400" height="1050">'+tag+'<span class="lot-n">'+u.photos.length+' photos</span></div>'
+      +'<div class="lot-bd"><div class="lot-sz">'+escH(sz)+'</div><div class="lot-md">'+escH(md)+'</div>'
+      +'<div class="lot-pr">'+(u.wasPrice?'<s>'+u.wasPrice+'</s> ':'')+u.price+' <small>+ tax</small></div>'
+      +'<div class="lot-go">See photos &amp; details &rarr;</div></div></a>';
+  }).join('');
+  tr.scrollLeft=0; lotAuto();
+}
+function lotFilter(z){ LOT_SIZE=z; renderLot(); }
+function lotStep(){ var tr=document.getElementById('lotTrack'); var c=tr&&tr.querySelector('.lot-card'); return c?c.getBoundingClientRect().width+14:300; }
+function lotGo(d){ var tr=document.getElementById('lotTrack'); if(!tr) return;
+  var max=tr.scrollWidth-tr.clientWidth-4;
+  if(d>0 && tr.scrollLeft>=max) tr.scrollTo({left:0,behavior:'smooth'});
+  else if(d<0 && tr.scrollLeft<=4) tr.scrollTo({left:max,behavior:'smooth'});
+  else tr.scrollBy({left:d*lotStep(),behavior:'smooth'}); }
+function lotAuto(){
+  if(LOT_TIMER) clearInterval(LOT_TIMER);
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var tr=document.getElementById('lotTrack'); if(!tr || tr.children.length<2) return;
+  LOT_TIMER=setInterval(function(){ if(document.visibilityState==='visible' && !tr._hold) lotGo(1); }, 4000);
+  if(!tr._wired){ tr._wired=1;
+    ['pointerdown','touchstart','mouseenter','focusin'].forEach(function(ev){ tr.addEventListener(ev,function(){ tr._hold=1; },{passive:true}); });
+    ['mouseleave'].forEach(function(ev){ tr.addEventListener(ev,function(){ tr._hold=0; }); });
+    tr.addEventListener('touchend',function(){ setTimeout(function(){ tr._hold=0; },8000); },{passive:true}); }
+}
 function buildInventory(list){
   UNITS={}; UNIT_ORDER=[];
   list.forEach(function(u){ if(!u.id) u.id=(u.stock||('U'+UNIT_ORDER.length)); UNITS[u.id]=u; UNIT_ORDER.push(u.id); });
   renderInvGrid(list);
+  renderLot();
 }
 
 function setUnitLd(u){
@@ -2187,7 +2278,10 @@ function loadInventory(){
     var list=(data&&data.units)?data.units:(Array.isArray(data)?data:[]);
     list=list.filter(function(u){return u.active!==false && u.status!=='Sold';});
     if(list.length){ buildInventory(list); var ic=document.getElementById('incomingCards'); if(ic) ic.style.display='none'; }
-    if(/^#unit-/.test(location.hash||'')){ var hid=decodeURIComponent(location.hash.slice(6)); if(UNITS[hid]) showUnit(hid); }
+    if(/^#unit-/.test(location.hash||'')){ var hid=decodeURIComponent(location.hash.slice(6)); if(UNITS[hid]){ location.replace(unitUrl(UNITS[hid])); return; } }
+    var rq=new URLSearchParams(location.search).get('reserve');
+    if(rq && UNITS[rq]){ var ru=UNITS[rq]; openReserve(ru.stock, ru.fullName||ru.model, ru.price+' + tax'); }
+    if(location.hash==='#terms'||location.hash==='#privacy') showPage(location.hash.slice(1));
     initSpinBanner();
   }).catch(function(){ initSpinBanner(); });
 }

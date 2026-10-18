@@ -34,7 +34,7 @@ for (const u of units) {
   const title = clean(u.fullName || u.seoTitle || [u.year, brandOf(u), u.model].filter(Boolean).join(' ')).slice(0, 150);
   const desc = clean(u.desc || u.seoDesc || title + '. In Owen, WI. Call or text 715-797-4782.').slice(0, 5000);
   rows.push([id, title, desc, availability(u.status || 'In Stock'), u.condition === 'Used' ? 'used' : 'new', price, sale,
-    SITE + '/#unit-' + encodeURIComponent(u.id || id), imgs[0], imgs.slice(1, 10).join(','), brandOf(u), typeOf(u), u.category || 'trailer']);
+    SITE + '/inventory/' + encodeURIComponent(String(u.slug || u.id || id).toLowerCase()) + '/', imgs[0], imgs.slice(1, 10).join(','), brandOf(u), typeOf(u), u.category || 'trailer']);
 }
 fs.writeFileSync(path.join(root, 'facebook-feed.csv'), rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 console.log(`facebook-feed.csv: ${rows.length - 1} units listed, ${skipped} skipped (need stock #, photo and price).`);

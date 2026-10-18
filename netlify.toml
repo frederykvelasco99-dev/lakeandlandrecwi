@@ -3,7 +3,7 @@
 # facebook-feed.csv from inventory.json so the Facebook catalog always matches the site.
 [build]
   publish = "."
-  command = "node tools/build-feed.js"
+  command = "node tools/build-feed.js && node tools/build-units.js"
 
 [[headers]]
   for = "/facebook-feed.csv"
