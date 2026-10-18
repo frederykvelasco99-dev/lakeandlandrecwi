@@ -106,7 +106,10 @@
           <option value="Just connecting" data-t="o6">Just connecting</option>
         </select>
         <label for="fNotes" data-t="notes">Anything else? (optional)</label><textarea id="fNotes" name="notes" rows="2"></textarea>
-        <label class="check"><input type="checkbox" id="fOk" name="textok" value="yes" checked><span data-t="ok">OK to text me about my request. Reply STOP any time.</span></label>
+        <label class="check"><input type="checkbox" id="fOk" name="textok" value="yes"><span data-t="ok">Yes, text me new arrivals and deals, including automated texts. Up to 4 msgs/month. Not required to buy. Msg &amp; data rates may apply. Reply STOP to stop, HELP for help.</span></label>
+        <label class="check"><input type="checkbox" id="fEok" name="emailconsent" value="yes"><span data-t="eok">Email me deals too. Unsubscribe anytime.</span></label>
+        <input type="hidden" name="consentver" value="card-2026-10-18">
+        <p class="sub" style="font-size:12px;margin:6px 0 0" data-t="disc">By sending, you ask us to call or text you about your request.</p>
         <div class="err" id="err" role="alert"></div>
         <button class="send" type="submit" id="sendBtn" data-t="send">Share my info</button>
       </form>
@@ -137,7 +140,7 @@
     brian:{name:"Brian Bredlau", role:{en:"Sales", es:"Ventas"}, phone:"+17157974782", email:"bdbredlau@charter.net"}
   };
   var T = {
-    es:{tag:"Remolques de aluminio, remolques para pontones y pontones en Owen, WI. Sin presión, respuestas claras.",call:"Llamar",text:"Texto",site:"Sitio web",save:"Guardar mi contacto",h2:"Mantengámonos en contacto",sub:"Comparte tus datos y te mando un texto. Sin spam, solo lo que pediste.",first:"Nombre",last:"Apellido",phone:"Celular",email:"Correo (opcional)",city:"Pueblo o ciudad (opcional)",int:"¿Qué estás buscando?",o0:"Escoge uno",o1:"Remolque utilitario",o2:"Remolque para pontón",o3:"Pontón",o4:"Motor Suzuki",o5:"Partes o servicio",o6:"Solo conectando",notes:"¿Algo más? (opcional)",ok:"Está bien mandarme textos sobre mi pedido. Responde STOP cuando quieras.",send:"Compartir mis datos",thx:"¡Listo, gracias!",more:"Más de nosotros",inv:"Ver inventario",rev:"Déjanos una reseña en Google",priv:"Nunca vendemos ni compartimos tus datos."}
+    es:{tag:"Remolques de aluminio, remolques para pontones y pontones en Owen, WI. Sin presión, respuestas claras.",call:"Llamar",text:"Texto",site:"Sitio web",save:"Guardar mi contacto",h2:"Mantengámonos en contacto",sub:"Comparte tus datos y te mando un texto. Sin spam, solo lo que pediste.",first:"Nombre",last:"Apellido",phone:"Celular",email:"Correo (opcional)",city:"Pueblo o ciudad (opcional)",int:"¿Qué estás buscando?",o0:"Escoge uno",o1:"Remolque utilitario",o2:"Remolque para pontón",o3:"Pontón",o4:"Motor Suzuki",o5:"Partes o servicio",o6:"Solo conectando",notes:"¿Algo más? (opcional)",ok:"Sí, mándenme textos con novedades y ofertas, incluso mensajes automáticos. Hasta 4 al mes. No es requisito para comprar. Pueden aplicar cargos de mensajes y datos. Responde STOP para dejar de recibirlos o HELP para ayuda.",eok:"También mándenme ofertas por correo. Puedo darme de baja cuando quiera.",disc:"Al enviar, nos pides que te llamemos o escribamos sobre tu solicitud.",send:"Compartir mis datos",thx:"¡Listo, gracias!",more:"Más de nosotros",inv:"Ver inventario",rev:"Déjanos una reseña en Google",priv:"Nunca vendemos ni compartimos tus datos."}
   };
   var EN = {};
   document.querySelectorAll("[data-t]").forEach(function(el){ EN[el.getAttribute("data-t")] = el.textContent; });
@@ -187,7 +190,9 @@
       "city": document.getElementById("fCity").value.trim(),
       "interest": document.getElementById("fInterest").value,
       "notes": document.getElementById("fNotes").value.trim(),
-      "textok": document.getElementById("fOk").checked ? "yes" : "no", "lang": lang };
+      "textok": document.getElementById("fOk").checked ? "yes" : "no",
+      "emailconsent": (document.getElementById("fEmail").value.trim() && document.getElementById("fEok").checked) ? "yes" : "no",
+      "consentver": "card-2026-10-18", "lang": lang };
     var btn = document.getElementById("sendBtn"); btn.disabled = true;
     fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:enc(data)})
       .then(function(r){ if(!r.ok) throw new Error(r.status); document.getElementById("formBox").hidden = true; document.getElementById("done").style.display = "block"; })
