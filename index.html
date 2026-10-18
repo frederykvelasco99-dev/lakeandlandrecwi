@@ -486,6 +486,21 @@
 
   .legal-strip{background:#0D1809;color:#8A9484;padding:18px 20px 6px;text-align:center;}
   .legal-note{max-width:900px;margin:0 auto 10px;font-size:11px;line-height:1.6;}
+  .tc-card{max-width:760px;margin:0 auto 14px;text-align:left;background:#15240f;border:1px solid #2c3d24;border-radius:8px;}
+  .tc-card summary{cursor:pointer;list-style:none;padding:11px 16px;color:#CFCBBE;font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;}
+  .tc-card summary::-webkit-details-marker{display:none}
+  .tc-card summary:after{content:"+";font-size:18px;color:var(--rust);}
+  .tc-card[open] summary:after{content:"\2212";}
+  .tc-body{padding:0 16px 14px;}
+  .tc-body h4{color:#E8E4D8;font-size:12px;margin:10px 0 3px;text-transform:uppercase;letter-spacing:.04em;}
+  .tc-body p{font-size:12px;line-height:1.55;color:#A9B1A3;margin:0;}
+  .tc-links{margin-top:12px !important;}
+  .tc-links a{color:#CFCBBE;text-decoration:underline;cursor:pointer;}
+  .mini-terms{margin:0 0 6px;font-size:10.5px;color:var(--muted);text-align:left;}
+  .mini-terms summary{cursor:pointer;text-decoration:underline;display:inline;}
+  .mini-terms p{margin:5px 0 0;line-height:1.45;font-size:10.5px !important;color:var(--muted);}
+  .note + .mini-terms p{font-size:12px !important;}
+  .dealer-badge{display:block;max-width:150px;max-height:56px;margin-top:8px;}
   .legal-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
   .legal-links a{color:#CFCBBE;font-size:12px;cursor:pointer;text-decoration:none;}
   .legal-links a:hover{color:var(--rust);text-decoration:underline;}
@@ -652,12 +667,13 @@
         <option>Pontoon</option>
         <option>Not sure yet</option>
       </select>
-      <label class="lead-check"><input type="checkbox" name="smsconsent" id="leadSms" value="yes"><span>Yes, text me new arrivals and deals. Up to 4 msgs/month. Msg &amp; data rates may apply. Reply STOP to stop, HELP for help. Not required to buy.</span></label>
+      <label class="lead-check"><input type="checkbox" name="smsconsent" id="leadSms" value="yes"><span>Text me new arrivals and deals. Optional, not required to buy. Msg &amp; data rates may apply. Reply STOP to stop.</span></label>
       <label class="lead-check"><input type="checkbox" name="emailconsent" id="leadEmailOk" value="yes"><span>Email me deals too. Unsubscribe anytime.</span></label>
-      <input type="hidden" name="consentver" value="web-2026-10-18">
+      <details class="mini-terms"><summary>Text &amp; email terms</summary><p>Up to 4 marketing texts per month from Lake &amp; Land Rec, which may be sent with automated technology. Reply HELP for help, STOP to opt out anytime. Emails include an unsubscribe link. We never sell your info. <a onclick="showPage('privacy')" style="text-decoration:underline;cursor:pointer;">Privacy</a> · <a onclick="showPage('terms')" style="text-decoration:underline;cursor:pointer;">Terms</a></p></details>
+      <input type="hidden" name="consentver" value="web-2026-10-18b">
       <input type="hidden" name="page" value="">
       <button type="submit" class="lead-submit">Text me back</button>
-      <div class="lead-note">By tapping Text me back you ask us to call or text you about this request. No spam, a real person answers. <a onclick="showPage('privacy')">Privacy</a></div>
+      <div class="lead-note">Tapping Text me back means you want us to call or text you about this request. A real person answers.</div>
     </form>
     <div id="leadSuccess" style="display:none;text-align:center;padding:12px 4px;">
       <div style="font-size:15px;font-weight:600;margin-bottom:6px;">You're all set 👍</div>
@@ -812,7 +828,6 @@
       <p>Real photos of the real units on our lot in Owen, smallest to biggest. Every price is the price, plus tax. Tap any trailer for photos and full specs.</p>
     </div>
   </div>
-  <a class="fit-cta" href="/size-finder/"><div><b>Not sure what size you need?</b><span>Answer 3 quick questions and we'll match you to the right trailer on our lot.</span></div><span class="btn-primary" style="background:var(--rust);color:#fff;display:inline-block;">Find my size</span></a>
   <div id="invGrid"></div>
   <div class="incoming-grid" id="incomingCards">
     <div class="incoming-card">
@@ -987,11 +1002,12 @@
   </div>
   <div>
     <strong>Contact</strong>
-    <a class="footer-link" href="tel:7157974782">715-797-4782</a><br><a class="footer-link" href="mailto:bdbredlau@charter.net">bdbredlau@charter.net</a>
+    <a class="footer-link" href="tel:7157974782">715-797-4782</a><br><a class="footer-link" href="mailto:freddylakeland@gmail.com">freddylakeland@gmail.com</a><br><a class="footer-link" href="mailto:bdbredlau@charter.net">bdbredlau@charter.net</a>
   </div>
   <div>
     <strong>Equipment</strong>
-    Trophy Aluminum Trailers<br>Pontoons powered by Suzuki Marine
+    Authorized Trophy Trailers dealer<br>Pontoons powered by Suzuki Marine
+    <img class="dealer-badge" src="photos/trophy-dealer-logo.png" alt="Authorized Trophy Trailers dealer" onerror="this.remove()">
   </div>
 </footer>
 <div class="social-strip">
@@ -1006,11 +1022,26 @@
   </a>
 </div>
 <div class="legal-strip">
-  <p class="legal-note">Every effort is made to keep inventory, pricing, and specifications accurate, but we cannot guarantee absolute accuracy and errors can happen. All units are subject to prior sale. Prices are plus applicable tax, title, and registration, and may change without notice. Photos may show options or a representative unit; confirm the exact build and specs with us before you buy.</p>
+  <p class="legal-note">Prices are plus tax, title and registration. All units subject to prior sale.</p>
+  <details class="tc-card">
+    <summary>Terms &amp; Conditions</summary>
+    <div class="tc-body">
+      <h4>Pricing and availability</h4>
+      <p>Prices are plus applicable sales tax, title and registration, and may change without notice. All units are subject to prior sale. If a price or listing is posted in error, we will correct it before any sale is made.</p>
+      <h4>Photos and specs</h4>
+      <p>Photos are of our units, but options can vary. Specs come from the manufacturer label. Confirm the exact build, weights and tow rating with us and with your vehicle manual before you buy. Never exceed the trailer GVWR.</p>
+      <h4>Reservations</h4>
+      <p>A reservation or form request is not a completed sale and no payment is taken on this site. We confirm price and availability with you directly.</p>
+      <h4>Texts and email</h4>
+      <p>When you send a form, you ask us to call or text you about that request. Marketing texts are sent only if you check that box: up to 4 per month, message and data rates may apply, reply STOP to opt out or HELP for help, not required to buy. Marketing emails are sent only if you ask for them and always include an unsubscribe link. We never sell your info or share your mobile number for others' marketing.</p>
+      <h4>Brands</h4>
+      <p>Lake &amp; Land Rec LLC is an authorized Trophy Trailers dealer. Trophy and its logo are trademarks of Trinity Products, Inc., used with permission. Suzuki, Lake Lounger and Flagship names belong to their owners.</p>
+      <p class="tc-links"><a onclick="showPage('terms')">Full Terms</a> · <a onclick="showPage('privacy')">Privacy Policy</a></p>
+    </div>
+  </details>
   <div class="legal-links">
     <a onclick="showPage('privacy')">Privacy Policy</a>
     <a onclick="showPage('terms')">Terms &amp; Disclaimers</a>
-    <a href="/size-finder/">Trailer Size Finder</a>
   </div>
 </div>
 <div class="copyright-bar">© 2026 Lake & Land Rec LLC. All rights reserved.</div>
@@ -1062,7 +1093,7 @@
   <div class="legal-page">
     <a class="legal-back" onclick="showPage('home')">← Back to home</a>
     <h1>Terms of Use &amp; Disclaimers</h1>
-    <div class="updated">Last updated: October 3, 2026</div>
+    <div class="updated">Last updated: October 18, 2026</div>
     <p>By using lakeandlandrec.com, you agree to these terms. If you do not agree, please do not use the site.</p>
     <h2>Inventory, pricing, and availability</h2>
     <p>We work hard to keep inventory, pricing, specifications, and photos accurate and up to date, but errors, omissions, and changes can happen, and we cannot guarantee absolute accuracy. All units are subject to prior sale and may be sold or removed at any time. Prices are shown plus applicable tax, title, and registration, and are subject to change without notice. Any price or listing that contains an obvious error is not a binding offer and may be corrected.</p>
@@ -1070,6 +1101,10 @@
     <p>Dimensions, capacities (GVWR, axles, tires), features, and other specifications are provided for general reference and should be confirmed with us and with the manufacturer (Trophy Trailers / Suzuki Marine) before purchase. Photos may show optional equipment or a representative unit; the actual unit may vary.</p>
     <h2>Reservations and inquiries</h2>
     <p>Submitting a reservation, notify, or contact form is a request for information or to hold a unit. It is not a completed sale and does not guarantee availability or price until we confirm it with you directly. No payment is collected through this website.</p>
+    <h2>Text message terms</h2>
+    <p>Lake &amp; Land Rec texts are for trailer and pontoon questions, new arrivals and deals. When you send a form, we text or call you about that request. Marketing texts go only to people who checked the opt-in box: up to 4 per month, which may be sent with automated technology. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to opt out, HELP for help, or call 715-797-4782. Carriers are not liable for delayed or undelivered messages.</p>
+    <h2>Email</h2>
+    <p>We email you what you asked for, such as photos, specs or a price. Deals and new-arrival emails go only to people who asked for them, and every one includes an unsubscribe link and our address: 837 West 3rd Street, Owen, WI 54460.</p>
     <h2>No warranties</h2>
     <p>The site and all information on it are provided "as is" and "as available," without warranties of any kind, whether express or implied. Product warranties, where they apply, are provided by the manufacturer, not by this website.</p>
     <h2>Limitation of liability</h2>
@@ -1077,7 +1112,7 @@
     <h2>Third-party links</h2>
     <p>This site may link to third-party websites. We do not control and are not responsible for their content, products, or privacy practices.</p>
     <h2>Intellectual property</h2>
-    <p>The content, layout, and logo on this site are the property of Lake &amp; Land Rec LLC or used with permission, and may not be copied or reused without permission. Brand names and logos such as Trophy Trailers and Suzuki Marine belong to their respective owners.</p>
+    <p>The content, layout, and logo on this site are the property of Lake &amp; Land Rec LLC or used with permission, and may not be copied or reused without permission. Lake &amp; Land Rec LLC is an authorized Trophy Trailers dealer; the Trophy name and logo are trademarks of Trinity Products, Inc., used with permission. Other brand names and logos, such as Suzuki Marine, belong to their respective owners.</p>
     <h2>Governing law</h2>
     <p>These terms are governed by the laws of the State of Wisconsin, without regard to conflict-of-law rules.</p>
     <h2>Changes</h2>
@@ -2109,7 +2144,8 @@ function showUnit(id){
     +   '<div class="highlight-row">'+chips+'</div>'
     +   _about
     +   '<h2 style="font-size:22px;">Specs</h2><table class="unit-specs"><tbody>'+specs+'</tbody></table>'
-    +   '<p class="note">Price is plus tax, title and registration. Specs come from the manufacturer label; confirm details with us before you buy. Subject to prior sale.</p>'
+    +   '<p class="note">Price is plus tax, title and registration. Subject to prior sale.</p>'
+    +   '<details class="mini-terms" style="font-size:12px;"><summary>Terms &amp; Conditions</summary><p>Photos are of this unit; options can vary. Specs come from the manufacturer label, so confirm the build, weights and your vehicle tow rating with us before you buy. Never exceed the trailer GVWR. A reservation is not a completed sale and no payment is taken on this site. <a onclick="showPage(\'terms\')" style="text-decoration:underline;cursor:pointer;">Full terms</a></p></details>'
     +   '<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">'+cta
     +     '<a class="callbtn-outline" href="tel:7157974782">Call 715-797-4782</a>'
     +     '<a class="callbtn-outline" href="sms:7157974782">Text us</a></div>'
@@ -2299,7 +2335,7 @@ function submitLead(e){
     hauling: document.getElementById('leadType').value,
     smsconsent: document.getElementById('leadSms').checked ? 'yes' : 'no',
     emailconsent: (email && document.getElementById('leadEmailOk').checked) ? 'yes' : 'no',
-    consentver: 'web-2026-10-18',
+    consentver: 'web-2026-10-18b',
     page: location.pathname + location.hash
   }).catch(()=>{});
   document.getElementById('leadFormWrap').style.display = 'none';
