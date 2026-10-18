@@ -1,3 +1,1830 @@
 {
-  "units": []
+ "updated": "2026-10-18",
+ "note": "Generated from the Lake & Land Rec CRM. Prices are plus tax.",
+ "units": [
+  {
+   "id": "YT001",
+   "stock": "YT001",
+   "category": "trailer",
+   "model": "3x5 Aluminum Yard Trailer, Lawn and Garden Cart",
+   "fullName": "2027 Trophy 3x5 Aluminum Yard Trailer, Lawn and Garden Cart",
+   "year": "2027",
+   "price": "$800",
+   "priceNum": 800,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "",
+   "slug": "yt001",
+   "tag": "12 in stock",
+   "qty": 12,
+   "size": "3x5",
+   "gvwr": 0,
+   "intro": "New 2027 Trophy 3x5 aluminum yard trailer for sale in Owen, WI. The easy way to move mulch, firewood, leaves and tools around the yard.",
+   "desc": "New 2027 Trophy 3x5 aluminum yard trailer for sale in Owen, WI. The easy way to move mulch, firewood, leaves and tools around the yard.\n\n✔ 3 x 5 ft aluminum diamond plate tub, it won't rust\n✔ Wide turf tires that go easy on your lawn\n✔ Pulls behind a lawn tractor, zero-turn or ATV\n✔ We have 12 in stock, ready to go\n\nPrice: $800 + tax each.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax.\n\nCall or text 715-797-4782 and ask for the 3x5 yard trailer, stock YT001.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "3 x 5 ft",
+    "Aluminum",
+    "12 in stock"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "3 x 5 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 3x5 Aluminum Yard Trailer, Lawn and Garden Cart | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 3x5 aluminum yard trailer for sale in Owen, WI. The easy way to move mulch, firewood, leaves and tools around the yard. $800 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/yt001-1.jpg",
+    "photos/yt001-2.jpg",
+    "photos/yt001-3.jpg",
+    "photos/yt001-4.jpg",
+    "photos/yt001-5.jpg",
+    "photos/yt001-6.jpg",
+    "photos/yt001-7.jpg",
+    "photos/yt001-8.jpg",
+    "photos/yt001-9.jpg",
+    "photos/yt001-10.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/yt001-1.jpg",
+    "photos/thumbs/yt001-2.jpg",
+    "photos/thumbs/yt001-3.jpg",
+    "photos/thumbs/yt001-4.jpg",
+    "photos/thumbs/yt001-5.jpg",
+    "photos/thumbs/yt001-6.jpg",
+    "photos/thumbs/yt001-7.jpg",
+    "photos/thumbs/yt001-8.jpg",
+    "photos/thumbs/yt001-9.jpg",
+    "photos/thumbs/yt001-10.jpg"
+   ]
+  },
+  {
+   "id": "T1675",
+   "stock": "T1675",
+   "category": "trailer",
+   "model": "5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2026 Trophy 5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2026",
+   "price": "$2,180",
+   "priceNum": 2180,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU0819T1041675",
+   "slug": "t1675",
+   "tag": "",
+   "qty": 1,
+   "size": "5x8",
+   "gvwr": 2200,
+   "intro": "New 2026 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.",
+   "desc": "New 2026 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.\n\n✔ 5 x 8 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 175/80 R13-C tires on 13X4.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nGreat for push mowers, a riding mower, an ATV, yard work and dump runs.\n\nPrice: $2,180 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1675.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 8 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2026"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 8 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "175/80 R13-C"
+    ],
+    [
+     "Rims",
+     "13X4.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2026 Trophy 5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2026 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs. $2,180 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1675-1.jpg",
+    "photos/t1675-2.jpg",
+    "photos/t1675-3.jpg",
+    "photos/t1675-4.jpg",
+    "photos/t1675-5.jpg",
+    "photos/t1675-6.jpg",
+    "photos/t1675-7.jpg",
+    "photos/t1675-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1675-1.jpg",
+    "photos/thumbs/t1675-2.jpg",
+    "photos/thumbs/t1675-3.jpg",
+    "photos/thumbs/t1675-4.jpg",
+    "photos/thumbs/t1675-5.jpg",
+    "photos/thumbs/t1675-6.jpg",
+    "photos/thumbs/t1675-7.jpg",
+    "photos/thumbs/t1675-8.jpg"
+   ]
+  },
+  {
+   "id": "T1678",
+   "stock": "T1678",
+   "category": "trailer",
+   "model": "5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$2,580",
+   "priceNum": 2580,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU0810V1041678",
+   "slug": "t1678",
+   "tag": "",
+   "qty": 1,
+   "size": "5x8",
+   "gvwr": 2200,
+   "intro": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.",
+   "desc": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.\n\n✔ 5 x 8 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 175/80 R13-C tires on 13X4.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nGreat for push mowers, a riding mower, an ATV, yard work and dump runs.\n\nPrice: $2,580 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1678.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 8 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 8 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "175/80 R13-C"
+    ],
+    [
+     "Rims",
+     "13X4.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 5x8 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs. $2,580 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1678-1.jpg",
+    "photos/t1678-2.jpg",
+    "photos/t1678-3.jpg",
+    "photos/t1678-4.jpg",
+    "photos/t1678-5.jpg",
+    "photos/t1678-6.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1678-1.jpg",
+    "photos/thumbs/t1678-2.jpg",
+    "photos/thumbs/t1678-3.jpg",
+    "photos/thumbs/t1678-4.jpg",
+    "photos/thumbs/t1678-5.jpg",
+    "photos/thumbs/t1678-6.jpg"
+   ]
+  },
+  {
+   "id": "T1965",
+   "stock": "T1965",
+   "category": "trailer",
+   "model": "5x8 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp",
+   "fullName": "2027 Trophy 5x8 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp",
+   "year": "2027",
+   "price": "$3,080",
+   "priceNum": 3080,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU0813V1041965",
+   "slug": "t1965",
+   "tag": "",
+   "qty": 1,
+   "size": "5x8",
+   "gvwr": 2200,
+   "intro": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.",
+   "desc": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs.\n\n✔ 5 x 8 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Stacked ramp that stores flat against the back\n✔ Treated wood deck with diamond plate sides\n✔ 175/80 R13-C tires on 13X4.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nGreat for push mowers, a riding mower, an ATV, yard work and dump runs.\n\nPrice: $3,080 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1965.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 8 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Stacked ramp",
+    "Diamond plate sides"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 8 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Diamond plate sides"
+    ],
+    [
+     "Ramp",
+     "Stacked ramp"
+    ],
+    [
+     "Tires",
+     "175/80 R13-C"
+    ],
+    [
+     "Rims",
+     "13X4.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 5x8 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 5x8 aluminum utility trailer for sale in Owen, WI. Light, tough and easy to tow, this 5x8 is ready for your weekend jobs. $3,080 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1965-1.jpg",
+    "photos/t1965-2.jpg",
+    "photos/t1965-3.jpg",
+    "photos/t1965-4.jpg",
+    "photos/t1965-5.jpg",
+    "photos/t1965-6.jpg",
+    "photos/t1965-7.jpg",
+    "photos/t1965-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1965-1.jpg",
+    "photos/thumbs/t1965-2.jpg",
+    "photos/thumbs/t1965-3.jpg",
+    "photos/thumbs/t1965-4.jpg",
+    "photos/thumbs/t1965-5.jpg",
+    "photos/thumbs/t1965-6.jpg",
+    "photos/thumbs/t1965-7.jpg",
+    "photos/thumbs/t1965-8.jpg"
+   ]
+  },
+  {
+   "id": "T1950",
+   "stock": "T1950",
+   "category": "trailer",
+   "model": "5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$2,680",
+   "priceNum": 2680,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU101XV1041950",
+   "slug": "t1950",
+   "tag": "",
+   "qty": 1,
+   "size": "5x10",
+   "gvwr": 2200,
+   "intro": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.",
+   "desc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.\n\n✔ 5 x 10 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 175/80 R13-C tires on 13X4.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nSized right for a riding mower, an ATV, firewood, yard projects and dump runs.\n\nPrice: $2,680 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1950.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 10 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 10 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "175/80 R13-C"
+    ],
+    [
+     "Rims",
+     "13X4.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts. $2,680 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1950-1.jpg",
+    "photos/t1950-2.jpg",
+    "photos/t1950-3.jpg",
+    "photos/t1950-4.jpg",
+    "photos/t1950-5.jpg",
+    "photos/t1950-6.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1950-1.jpg",
+    "photos/thumbs/t1950-2.jpg",
+    "photos/thumbs/t1950-3.jpg",
+    "photos/thumbs/t1950-4.jpg",
+    "photos/thumbs/t1950-5.jpg",
+    "photos/thumbs/t1950-6.jpg"
+   ]
+  },
+  {
+   "id": "T2054",
+   "stock": "T2054",
+   "category": "trailer",
+   "model": "5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$2,680",
+   "priceNum": 2680,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1019V1042054",
+   "slug": "t2054",
+   "tag": "",
+   "qty": 1,
+   "size": "5x10",
+   "gvwr": 2200,
+   "intro": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.",
+   "desc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.\n\n✔ 5 x 10 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 175/80 R13-C tires on 13X4.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nSized right for a riding mower, an ATV, firewood, yard projects and dump runs.\n\nPrice: $2,680 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2054.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 10 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 10 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "175/80 R13-C"
+    ],
+    [
+     "Rims",
+     "13X4.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts. $2,680 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2054-1.jpg",
+    "photos/t2054-2.jpg",
+    "photos/t2054-3.jpg",
+    "photos/t2054-4.jpg",
+    "photos/t2054-5.jpg",
+    "photos/t2054-6.jpg",
+    "photos/t2054-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2054-1.jpg",
+    "photos/thumbs/t2054-2.jpg",
+    "photos/thumbs/t2054-3.jpg",
+    "photos/thumbs/t2054-4.jpg",
+    "photos/thumbs/t2054-5.jpg",
+    "photos/thumbs/t2054-6.jpg",
+    "photos/thumbs/t2054-7.jpg"
+   ]
+  },
+  {
+   "id": "T1960",
+   "stock": "T1960",
+   "category": "trailer",
+   "model": "5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp",
+   "fullName": "2027 Trophy 5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp",
+   "year": "2027",
+   "price": "$3,380",
+   "priceNum": 3380,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1012V1041960",
+   "slug": "t1960",
+   "tag": "",
+   "qty": 1,
+   "size": "5x10",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.",
+   "desc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts.\n\n✔ 5 x 10 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Stacked ramp that stores flat against the back\n✔ Treated wood deck with diamond plate sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nSized right for a riding mower, an ATV, firewood, yard projects and dump runs.\n\nPrice: $3,380 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1960.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "5 x 10 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Stacked ramp",
+    "Diamond plate sides"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "5 x 10 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Diamond plate sides"
+    ],
+    [
+     "Ramp",
+     "Stacked ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 5x10 aluminum utility trailer for sale in Owen, WI. A 5x10 aluminum trailer that works hard and never rusts. $3,380 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1960-1.jpg",
+    "photos/t1960-2.jpg",
+    "photos/t1960-3.jpg",
+    "photos/t1960-4.jpg",
+    "photos/t1960-5.jpg",
+    "photos/t1960-6.jpg",
+    "photos/t1960-7.jpg",
+    "photos/t1960-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1960-1.jpg",
+    "photos/thumbs/t1960-2.jpg",
+    "photos/thumbs/t1960-3.jpg",
+    "photos/thumbs/t1960-4.jpg",
+    "photos/thumbs/t1960-5.jpg",
+    "photos/thumbs/t1960-6.jpg",
+    "photos/thumbs/t1960-7.jpg",
+    "photos/thumbs/t1960-8.jpg"
+   ]
+  },
+  {
+   "id": "T2067",
+   "stock": "T2067",
+   "category": "trailer",
+   "model": "6.5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$3,380",
+   "priceNum": 3380,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1017V1042067",
+   "slug": "t2067",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x10",
+   "gvwr": 2200,
+   "intro": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts.",
+   "desc": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts.\n\n✔ 6.5 x 10 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,200 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nA good fit for a zero-turn mower, an ATV or a compact UTV, plus your yard and garden gear.\n\nPrice: $3,380 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2067.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 10 ft",
+    "Single axle",
+    "2,200 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 10 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,200 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x10 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts. $3,380 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2067-1.jpg",
+    "photos/t2067-2.jpg",
+    "photos/t2067-3.jpg",
+    "photos/t2067-4.jpg",
+    "photos/t2067-5.jpg",
+    "photos/t2067-6.jpg",
+    "photos/t2067-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2067-1.jpg",
+    "photos/thumbs/t2067-2.jpg",
+    "photos/thumbs/t2067-3.jpg",
+    "photos/thumbs/t2067-4.jpg",
+    "photos/thumbs/t2067-5.jpg",
+    "photos/thumbs/t2067-6.jpg",
+    "photos/thumbs/t2067-7.jpg"
+   ]
+  },
+  {
+   "id": "T1875",
+   "stock": "T1875",
+   "category": "trailer",
+   "model": "6.5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$3,880",
+   "priceNum": 3880,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1010V1041875",
+   "slug": "t1875",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x10",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts.",
+   "desc": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts.\n\n✔ 6.5 x 10 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with diamond plate sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nA good fit for a zero-turn mower, an ATV or a compact UTV, plus your yard and garden gear.\n\nPrice: $3,880 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1875.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 10 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Diamond plate sides"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 10 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Diamond plate sides"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x10 aluminum utility trailer for sale in Owen, WI. A 6.5x10 aluminum trailer that works hard and never rusts. $3,880 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1875-1.jpg",
+    "photos/t1875-2.jpg",
+    "photos/t1875-3.jpg",
+    "photos/t1875-4.jpg",
+    "photos/t1875-5.jpg",
+    "photos/t1875-6.jpg",
+    "photos/t1875-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1875-1.jpg",
+    "photos/thumbs/t1875-2.jpg",
+    "photos/thumbs/t1875-3.jpg",
+    "photos/thumbs/t1875-4.jpg",
+    "photos/thumbs/t1875-5.jpg",
+    "photos/thumbs/t1875-6.jpg",
+    "photos/thumbs/t1875-7.jpg"
+   ]
+  },
+  {
+   "id": "T2153",
+   "stock": "T2153",
+   "category": "trailer",
+   "model": "6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$3,680",
+   "priceNum": 3680,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1214V1042153",
+   "slug": "t2153",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x12",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.",
+   "desc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.\n\n✔ 6.5 x 12 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nRoom for a zero-turn and your trimmers, an ATV, a compact UTV or a full load of landscaping supplies.\n\nPrice: $3,680 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2153.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 12 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 12 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs. $3,680 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2155-1.jpg",
+    "photos/t2155-2.jpg",
+    "photos/t2155-3.jpg",
+    "photos/t2155-4.jpg",
+    "photos/t2155-5.jpg",
+    "photos/t2155-6.jpg",
+    "photos/t2155-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2155-1.jpg",
+    "photos/thumbs/t2155-2.jpg",
+    "photos/thumbs/t2155-3.jpg",
+    "photos/thumbs/t2155-4.jpg",
+    "photos/thumbs/t2155-5.jpg",
+    "photos/thumbs/t2155-6.jpg",
+    "photos/thumbs/t2155-7.jpg"
+   ]
+  },
+  {
+   "id": "T2154",
+   "stock": "T2154",
+   "category": "trailer",
+   "model": "6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$3,680",
+   "priceNum": 3680,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1216V1042154",
+   "slug": "t2154",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x12",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.",
+   "desc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.\n\n✔ 6.5 x 12 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nRoom for a zero-turn and your trimmers, an ATV, a compact UTV or a full load of landscaping supplies.\n\nPrice: $3,680 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2154.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 12 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 12 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs. $3,680 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2155-1.jpg",
+    "photos/t2155-2.jpg",
+    "photos/t2154-3.jpg",
+    "photos/t2155-3.jpg",
+    "photos/t2155-4.jpg",
+    "photos/t2155-5.jpg",
+    "photos/t2155-6.jpg",
+    "photos/t2155-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2155-1.jpg",
+    "photos/thumbs/t2155-2.jpg",
+    "photos/thumbs/t2154-3.jpg",
+    "photos/thumbs/t2155-3.jpg",
+    "photos/thumbs/t2155-4.jpg",
+    "photos/thumbs/t2155-5.jpg",
+    "photos/thumbs/t2155-6.jpg",
+    "photos/thumbs/t2155-7.jpg"
+   ]
+  },
+  {
+   "id": "T2155",
+   "stock": "T2155",
+   "category": "trailer",
+   "model": "6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$3,680",
+   "priceNum": 3680,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1218V1042155",
+   "slug": "t2155",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x12",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.",
+   "desc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.\n\n✔ 6.5 x 12 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nRoom for a zero-turn and your trimmers, an ATV, a compact UTV or a full load of landscaping supplies.\n\nPrice: $3,680 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2155.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 12 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 12 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x12 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs. $3,680 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2155-1.jpg",
+    "photos/t2155-2.jpg",
+    "photos/t2155-3.jpg",
+    "photos/t2155-4.jpg",
+    "photos/t2155-5.jpg",
+    "photos/t2155-6.jpg",
+    "photos/t2155-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2155-1.jpg",
+    "photos/thumbs/t2155-2.jpg",
+    "photos/thumbs/t2155-3.jpg",
+    "photos/thumbs/t2155-4.jpg",
+    "photos/thumbs/t2155-5.jpg",
+    "photos/thumbs/t2155-6.jpg",
+    "photos/thumbs/t2155-7.jpg"
+   ]
+  },
+  {
+   "id": "T2161",
+   "stock": "T2161",
+   "category": "trailer",
+   "model": "6.5x12 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 6.5x12 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$4,280",
+   "priceNum": 4280,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1213V1042161",
+   "slug": "t2161",
+   "tag": "",
+   "qty": 1,
+   "size": "6.5x12",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.",
+   "desc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs.\n\n✔ 6.5 x 12 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with diamond plate sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nRoom for a zero-turn and your trimmers, an ATV, a compact UTV or a full load of landscaping supplies.\n\nPrice: $4,280 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2161.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "6.5 x 12 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Diamond plate sides"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "6.5 x 12 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Diamond plate sides"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 6.5x12 Aluminum Trailer, Diamond Plate Sides, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 6.5x12 aluminum utility trailer for sale in Owen, WI. The do-it-all 6.5x12: big enough for real work, light enough for most trucks and SUVs. $4,280 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2161-1.jpg",
+    "photos/t2161-2.jpg",
+    "photos/t2161-3.jpg",
+    "photos/t2161-4.jpg",
+    "photos/t2161-5.jpg",
+    "photos/t2161-6.jpg",
+    "photos/t2161-7.jpg",
+    "photos/t2161-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2161-1.jpg",
+    "photos/thumbs/t2161-2.jpg",
+    "photos/thumbs/t2161-3.jpg",
+    "photos/thumbs/t2161-4.jpg",
+    "photos/thumbs/t2161-5.jpg",
+    "photos/thumbs/t2161-6.jpg",
+    "photos/thumbs/t2161-7.jpg",
+    "photos/thumbs/t2161-8.jpg"
+   ]
+  },
+  {
+   "id": "T1708",
+   "stock": "T1708",
+   "category": "trailer",
+   "model": "7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2026 Trophy 7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2026",
+   "price": "$3,980",
+   "priceNum": 3980,
+   "wasPrice": "$4,480",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1414T1041708",
+   "slug": "t1708",
+   "tag": "Clearance",
+   "qty": 1,
+   "size": "7x14",
+   "gvwr": 2990,
+   "intro": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.",
+   "desc": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.\n\n✔ 7 x 14 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nBuilt for UTVs, ATVs, mowers and landscaping gear, with a long deck that still tows light.\n\nClearance price: $3,980 + tax (was $4,480). Priced to move.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1708.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "7 x 14 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2026"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "7 x 14 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2026 Trophy 7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs. $3,980 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1708-1.jpg",
+    "photos/t1708-2.jpg",
+    "photos/t1708-3.jpg",
+    "photos/t1708-4.jpg",
+    "photos/t1708-5.jpg",
+    "photos/t1708-6.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1708-1.jpg",
+    "photos/thumbs/t1708-2.jpg",
+    "photos/thumbs/t1708-3.jpg",
+    "photos/thumbs/t1708-4.jpg",
+    "photos/thumbs/t1708-5.jpg",
+    "photos/thumbs/t1708-6.jpg"
+   ]
+  },
+  {
+   "id": "T2175",
+   "stock": "T2175",
+   "category": "trailer",
+   "model": "7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "fullName": "2027 Trophy 7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp",
+   "year": "2027",
+   "price": "$4,580",
+   "priceNum": 4580,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1417V1042175",
+   "slug": "t2175",
+   "tag": "",
+   "qty": 1,
+   "size": "7x14",
+   "gvwr": 2990,
+   "intro": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.",
+   "desc": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.\n\n✔ 7 x 14 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 2,990 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with two-rail open sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nBuilt for UTVs, ATVs, mowers and landscaping gear, with a long deck that still tows light.\n\nPrice: $4,580 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T2175.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "7 x 14 ft",
+    "Single axle",
+    "2,990 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "7 x 14 ft"
+    ],
+    [
+     "Axles",
+     "Single axle"
+    ],
+    [
+     "GVWR",
+     "2,990 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 7x14 Aluminum Utility Trailer, Single Axle, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs. $4,580 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t2175-1.jpg",
+    "photos/t2175-2.jpg",
+    "photos/t2175-3.jpg",
+    "photos/t2175-4.jpg",
+    "photos/t2175-5.jpg",
+    "photos/t2175-6.jpg",
+    "photos/t2175-7.jpg",
+    "photos/t2175-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t2175-1.jpg",
+    "photos/thumbs/t2175-2.jpg",
+    "photos/thumbs/t2175-3.jpg",
+    "photos/thumbs/t2175-4.jpg",
+    "photos/thumbs/t2175-5.jpg",
+    "photos/thumbs/t2175-6.jpg",
+    "photos/thumbs/t2175-7.jpg",
+    "photos/thumbs/t2175-8.jpg"
+   ]
+  },
+  {
+   "id": "T1909",
+   "stock": "T1909",
+   "category": "trailer",
+   "model": "7x14 Aluminum Utility Trailer, Tandem, Tip-In Ramp",
+   "fullName": "2027 Trophy 7x14 Aluminum Utility Trailer, Tandem, Tip-In Ramp",
+   "year": "2027",
+   "price": "$4,980",
+   "priceNum": 4980,
+   "wasPrice": "",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1429V1041909",
+   "slug": "t1909",
+   "tag": "",
+   "qty": 1,
+   "size": "7x14",
+   "gvwr": 4400,
+   "intro": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.",
+   "desc": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.\n\n✔ 7 x 14 ft all-aluminum frame, made in the USA by Trinity Products\n✔ Tandem axle, 4,400 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R14-C tires on 14X5.5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nHaul a side by side, two ATVs or a load of contractor and landscaping gear.\n\nPrice: $4,980 + tax.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1909.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "7 x 14 ft",
+    "Tandem axle",
+    "4,400 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2027"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "7 x 14 ft"
+    ],
+    [
+     "Axles",
+     "Tandem axle"
+    ],
+    [
+     "GVWR",
+     "4,400 lb"
+    ],
+    [
+     "GAWR",
+     "2,200 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R14-C"
+    ],
+    [
+     "Rims",
+     "14X5.5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2027 Trophy 7x14 Aluminum Utility Trailer, Tandem, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2027 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs. $4,980 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1909-1.jpg",
+    "photos/t1909-2.jpg",
+    "photos/t1909-3.jpg",
+    "photos/t1909-4.jpg",
+    "photos/t1909-5.jpg",
+    "photos/t1909-6.jpg",
+    "photos/t1909-7.jpg",
+    "photos/t1909-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1909-1.jpg",
+    "photos/thumbs/t1909-2.jpg",
+    "photos/thumbs/t1909-3.jpg",
+    "photos/thumbs/t1909-4.jpg",
+    "photos/thumbs/t1909-5.jpg",
+    "photos/thumbs/t1909-6.jpg",
+    "photos/thumbs/t1909-7.jpg",
+    "photos/thumbs/t1909-8.jpg"
+   ]
+  },
+  {
+   "id": "T1685",
+   "stock": "T1685",
+   "category": "trailer",
+   "model": "7x14 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp",
+   "fullName": "2026 Trophy 7x14 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp",
+   "year": "2026",
+   "price": "$5,980",
+   "priceNum": 5980,
+   "wasPrice": "$6,480",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1426T1041685",
+   "slug": "t1685",
+   "tag": "Clearance",
+   "qty": 1,
+   "size": "7x14",
+   "gvwr": 6000,
+   "intro": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.",
+   "desc": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs.\n\n✔ 7 x 14 ft all-aluminum heavy-duty frame, made in the USA by Trinity Products\n✔ Tandem axle, 6,000 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R15-D tires on 15X6JJ rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nHaul a side by side, two ATVs or a load of contractor and landscaping gear.\n\nClearance price: $5,980 + tax (was $6,480). Priced to move.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1685.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "7 x 14 ft",
+    "Tandem axle",
+    "6,000 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2026"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "7 x 14 ft"
+    ],
+    [
+     "Axles",
+     "Tandem axle"
+    ],
+    [
+     "GVWR",
+     "6,000 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R15-D"
+    ],
+    [
+     "Rims",
+     "15X6JJ"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2026 Trophy 7x14 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2026 Trophy 7x14 aluminum utility trailer for sale in Owen, WI. Built for bigger toys and bigger jobs. $5,980 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1685-1.jpg",
+    "photos/t1685-2.jpg",
+    "photos/t1685-3.jpg",
+    "photos/t1685-4.jpg",
+    "photos/t1685-5.jpg",
+    "photos/t1685-6.jpg",
+    "photos/t1685-7.jpg",
+    "photos/t1685-8.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1685-1.jpg",
+    "photos/thumbs/t1685-2.jpg",
+    "photos/thumbs/t1685-3.jpg",
+    "photos/thumbs/t1685-4.jpg",
+    "photos/thumbs/t1685-5.jpg",
+    "photos/thumbs/t1685-6.jpg",
+    "photos/thumbs/t1685-7.jpg",
+    "photos/thumbs/t1685-8.jpg"
+   ]
+  },
+  {
+   "id": "T1756",
+   "stock": "T1756",
+   "category": "trailer",
+   "model": "7x16 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp",
+   "fullName": "2026 Trophy 7x16 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp",
+   "year": "2026",
+   "price": "$6,280",
+   "priceNum": 6280,
+   "wasPrice": "$6,880",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTU1627T1041756",
+   "slug": "t1756",
+   "tag": "Clearance",
+   "qty": 1,
+   "size": "7x16",
+   "gvwr": 6000,
+   "intro": "New 2026 Trophy 7x16 aluminum utility trailer for sale in Owen, WI. Our heavy-duty 7x16 for the loads that need it.",
+   "desc": "New 2026 Trophy 7x16 aluminum utility trailer for sale in Owen, WI. Our heavy-duty 7x16 for the loads that need it.\n\n✔ 7 x 16 ft all-aluminum heavy-duty frame, made in the USA by Trinity Products\n✔ Tandem axle, 6,000 lb GVWR\n✔ Tip-in ramp that folds into the bed, nothing to slide out\n✔ Treated wood deck with open rail sides\n✔ 205/75 R15-D tires on 15X5 rims\n✔ Aluminum won't rust, and it tows lighter than steel\n\nMade for a full-size side by side, equipment and big contractor loads.\n\nClearance price: $6,280 + tax (was $6,880). Priced to move.\n\nAuthorized Trophy Trailers dealer for 18 years. Straight prices, no hidden fees, just plus tax, and real people here in Owen after the sale.\n\nCall or text 715-797-4782 and ask for stock T1756.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "7 x 16 ft",
+    "Tandem axle",
+    "6,000 lb GVWR",
+    "Tip-in ramp",
+    "Open rail"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2026"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "Size",
+     "7 x 16 ft"
+    ],
+    [
+     "Axles",
+     "Tandem axle"
+    ],
+    [
+     "GVWR",
+     "6,000 lb"
+    ],
+    [
+     "GAWR",
+     "3,500 lb per axle"
+    ],
+    [
+     "Deck",
+     "Treated wood"
+    ],
+    [
+     "Sides",
+     "Open rail"
+    ],
+    [
+     "Ramp",
+     "Tip-in ramp"
+    ],
+    [
+     "Tires",
+     "205/75 R15-D"
+    ],
+    [
+     "Rims",
+     "15X5"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2026 Trophy 7x16 Aluminum Utility Trailer, Heavy Duty, Tandem, Tip-In Ramp | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2026 Trophy 7x16 aluminum utility trailer for sale in Owen, WI. Our heavy-duty 7x16 for the loads that need it. $6,280 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/t1756-1.jpg",
+    "photos/t1756-2.jpg",
+    "photos/t1756-3.jpg",
+    "photos/t1756-4.jpg",
+    "photos/t1756-5.jpg",
+    "photos/t1756-6.jpg",
+    "photos/t1756-7.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/t1756-1.jpg",
+    "photos/thumbs/t1756-2.jpg",
+    "photos/thumbs/t1756-3.jpg",
+    "photos/thumbs/t1756-4.jpg",
+    "photos/thumbs/t1756-5.jpg",
+    "photos/thumbs/t1756-6.jpg",
+    "photos/thumbs/t1756-7.jpg"
+   ]
+  },
+  {
+   "id": "PT1797",
+   "stock": "PT1797",
+   "category": "pontoon-trailer",
+   "model": "20 ft Aluminum Pontoon Trailer",
+   "fullName": "2026 Trophy 20 ft Aluminum Pontoon Trailer",
+   "year": "2026",
+   "price": "$3,510",
+   "priceNum": 3510,
+   "wasPrice": "$3,660",
+   "status": "In Stock",
+   "condition": "New",
+   "vin": "5HBTP2022T1041797",
+   "slug": "pt1797",
+   "tag": "Clearance",
+   "qty": 1,
+   "size": "",
+   "gvwr": 3820,
+   "intro": "New 2026 Trophy aluminum pontoon trailer for 20 ft pontoons, for sale in Owen, WI. Launch, load and store your toon without worrying about rust.",
+   "desc": "New 2026 Trophy aluminum pontoon trailer for 20 ft pontoons, for sale in Owen, WI. Launch, load and store your toon without worrying about rust.\n\n✔ Built for 20 ft pontoon boats\n✔ All-aluminum frame, made in the USA by Trinity Products\n✔ Single axle, 3,820 lb GVWR\n✔ Bunks set up for pontoon tubes\n✔ 530X12-C tires on 12X4 rims\n\nClearance price: $3,510 + tax (was $3,660).\n\nAuthorized Trophy Trailers and Suzuki Marine dealer for 18 years. Straight prices, no hidden fees, just plus tax.\n\nCall or text 715-797-4782 and ask for stock PT1797.\n\nWe're at 837 W 3rd St in Owen, WI, easy to reach from Withee, Thorp, Medford, Neillsville, Greenwood, Abbotsford, Colby, Stanley, Marshfield and Eau Claire.\n\nHablamos español. Escríbenos o llámanos.",
+   "chips": [
+    "Fits 20 ft pontoons",
+    "Bunk style",
+    "3,820 lb GVWR"
+   ],
+   "specs": [
+    [
+     "Year",
+     "2026"
+    ],
+    [
+     "Brand",
+     "Trophy Trailers"
+    ],
+    [
+     "GVWR",
+     "3,820 lb"
+    ],
+    [
+     "GAWR",
+     "2,000 lb per axle"
+    ],
+    [
+     "Deck",
+     "Bunks (pontoon)"
+    ],
+    [
+     "Tires",
+     "530X12-C"
+    ],
+    [
+     "Rims",
+     "12X4"
+    ],
+    [
+     "Built by",
+     "Trinity Products, USA"
+    ]
+   ],
+   "seoTitle": "2026 Trophy 20 ft Aluminum Pontoon Trailer | Lake & Land Rec, Owen WI",
+   "seoDesc": "New 2026 Trophy aluminum pontoon trailer for 20 ft pontoons, for sale in Owen, WI. Launch, load and store your toon without worrying about rust. $3,510 + tax. Call or text 715-797-4782.",
+   "photos": [
+    "photos/pt1797-1.jpg",
+    "photos/pt1797-2.jpg",
+    "photos/pt1797-3.jpg",
+    "photos/pt1797-4.jpg"
+   ],
+   "thumbs": [
+    "photos/thumbs/pt1797-1.jpg",
+    "photos/thumbs/pt1797-2.jpg",
+    "photos/thumbs/pt1797-3.jpg",
+    "photos/thumbs/pt1797-4.jpg"
+   ]
+  }
+ ]
 }

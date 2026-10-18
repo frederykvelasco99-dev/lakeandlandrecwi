@@ -119,7 +119,21 @@
   .lead-card-title{font-family:'Oswald';font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:0.02em;color:var(--ink);margin-bottom:12px;}
   .lead-card input, .lead-card select{width:100%;padding:9px 10px;margin-bottom:8px;border:1px solid var(--line);border-radius:3px;font-size:13px;font-family:'Inter';color:var(--ink);}
   .lead-submit{width:100%;background:var(--rust);color:#fff;border:none;padding:11px;font-weight:600;font-size:13px;letter-spacing:0.03em;text-transform:uppercase;border-radius:3px;cursor:pointer;margin-top:4px;}
-  .lead-note{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;}
+  .lead-note{font-size:10.5px;line-height:1.45;color:var(--muted);text-align:center;margin-top:8px;}
+  .lead-note a{color:var(--muted);text-decoration:underline;cursor:pointer;}
+  .lead-check{display:flex;gap:7px;align-items:flex-start;font-size:10.5px;line-height:1.4;color:var(--muted);margin:2px 0 7px;cursor:pointer;text-align:left;}
+  .lead-check input{width:auto !important;margin:2px 0 0 !important;flex:none;accent-color:var(--rust);}
+  .inv-was{color:var(--muted);font-weight:400;text-decoration:line-through;margin-right:6px;font-size:.9em;}
+  .unit-price s{font-size:17px;color:var(--muted);margin-right:8px;}
+  .unit-about{max-width:760px;margin:26px 0 8px;}
+  .unit-about p{font-size:15px;line-height:1.65;color:var(--ink);margin:0 0 12px;}
+  .unit-about ul{list-style:none;padding:0;margin:0 0 14px;}
+  .unit-about li{font-size:15px;line-height:1.55;padding:3px 0 3px 26px;position:relative;}
+  .unit-about li:before{content:"\2713";position:absolute;left:4px;color:var(--rust);font-weight:700;}
+  .fit-cta{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;background:#fbf6ec;color:#1f2a1c;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:14px 18px;margin:0 0 18px;}
+  .fit-cta b{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;text-transform:uppercase;letter-spacing:.02em;}
+  .fit-cta span{display:block;font-size:13px;color:#5b6157;}
+  .fit-cta .btn-primary{text-decoration:none;font-size:13px;padding:10px 18px;}
   @media(max-width:900px){.lead-card{margin:24px auto 0;max-width:100%;}}
 
   .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);}
@@ -629,7 +643,8 @@
       <input type="hidden" name="form-name" value="text-me-back">
       <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
       <input type="text" name="name" id="leadName" placeholder="Your name" required>
-      <input type="tel" name="phone" id="leadPhone" placeholder="Phone number" required>
+      <input type="tel" name="phone" id="leadPhone" placeholder="Mobile number" autocomplete="tel" inputmode="tel" required>
+      <input type="email" name="email" id="leadEmail" placeholder="Email for photos &amp; prices (optional)" autocomplete="email">
       <select name="hauling" id="leadType">
         <option value="">What are you hauling?</option>
         <option>UTV / ATV</option>
@@ -637,12 +652,16 @@
         <option>Pontoon</option>
         <option>Not sure yet</option>
       </select>
+      <label class="lead-check"><input type="checkbox" name="smsconsent" id="leadSms" value="yes"><span>Yes, text me new arrivals and deals. Up to 4 msgs/month. Msg &amp; data rates may apply. Reply STOP to stop, HELP for help. Not required to buy.</span></label>
+      <label class="lead-check"><input type="checkbox" name="emailconsent" id="leadEmailOk" value="yes"><span>Email me deals too. Unsubscribe anytime.</span></label>
+      <input type="hidden" name="consentver" value="web-2026-10-18">
+      <input type="hidden" name="page" value="">
       <button type="submit" class="lead-submit">Text me back</button>
-      <div class="lead-note">No spam. One text, from a real person.</div>
+      <div class="lead-note">By tapping Text me back you ask us to call or text you about this request. No spam, a real person answers. <a onclick="showPage('privacy')">Privacy</a></div>
     </form>
     <div id="leadSuccess" style="display:none;text-align:center;padding:12px 4px;">
       <div style="font-size:15px;font-weight:600;margin-bottom:6px;">You're all set 👍</div>
-      <div style="font-size:13px;color:var(--muted);">We've got your info — someone from Lake & Land Rec will text you back shortly.</div>
+      <div style="font-size:13px;color:var(--muted);">We've got your info. Someone from Lake &amp; Land Rec will text you back shortly. Hablamos español.</div>
     </div>
   </div>
 </section>
@@ -685,10 +704,10 @@
 
 <section class="promo-section">
   <div class="promo-carousel" id="promoCarousel">
-    <a class="promo-slide active" href="#inventory"><img src="photos/promo-1.png" onerror="this.onerror=null;this.src='photos/promo-1.jpg'" alt="Lake & Land Rec pontoon trailer in Owen WI, time to move your pontoon out of the water"></a>
-    <a class="promo-slide" href="#inventory"><img src="photos/promo-2.png" onerror="this.onerror=null;this.src='photos/promo-2.jpg'" alt="Wisconsin best seller Trophy aluminum trailer, brand new, $800 plus tax, Lake & Land Rec"></a>
-    <a class="promo-slide" href="#inventory"><img src="photos/promo-3.png" onerror="this.onerror=null;this.src='photos/promo-3.jpg'" alt="Flagship pontoon boat at Lake & Land Rec, lake life starts here"></a>
-    <a class="promo-slide" href="#inventory"><img src="photos/promo-4.png" onerror="this.onerror=null;this.src='photos/promo-4.jpg'" alt="6.5 by 12 aluminum utility trailer, 2,990 lb GVWR, available now at Lake & Land Rec"></a>
+    <a class="promo-slide active" href="#unit-PT1797" onclick="if(window.UNITS&&UNITS['PT1797']){showUnit('PT1797');return false;}"><img src="photos/promo-1.jpg" loading="lazy" alt="Lake & Land Rec pontoon trailer in Owen WI, time to move your pontoon out of the water"></a>
+    <a class="promo-slide" href="#unit-YT001" onclick="if(window.UNITS&&UNITS['YT001']){showUnit('YT001');return false;}"><img src="photos/promo-2.jpg" loading="lazy" alt="Wisconsin best seller Trophy aluminum trailer, brand new, $800 plus tax, Lake & Land Rec"></a>
+    <a class="promo-slide" href="#appointment"><img src="photos/promo-3.jpg" loading="lazy" alt="Flagship pontoon boat at Lake & Land Rec, lake life starts here"></a>
+    <a class="promo-slide" href="#unit-T2161" onclick="if(window.UNITS&&UNITS['T2161']){showUnit('T2161');return false;}"><img src="photos/promo-4.jpg" loading="lazy" alt="6.5 by 12 aluminum utility trailer, 2,990 lb GVWR, available now at Lake & Land Rec"></a>
     <button class="promo-arrow prev" aria-label="Previous promo">‹</button>
     <button class="promo-arrow next" aria-label="Next promo">›</button>
     <div class="promo-dots" id="promoDots"></div>
@@ -790,9 +809,10 @@
   <div class="section-head">
     <div>
       <h2>Inventory</h2>
-      <p>Fresh photos are coming this week, and the new 2027 models are on the way. Here's what's landing in Owen. Want first pick? Text us and we'll send photos and prices the minute they hit the lot.</p>
+      <p>Real photos of the real units on our lot in Owen, smallest to biggest. Every price is the price, plus tax. Tap any trailer for photos and full specs.</p>
     </div>
   </div>
+  <a class="fit-cta" href="/size-finder/"><div><b>Not sure what size you need?</b><span>Answer 3 quick questions and we'll match you to the right trailer on our lot.</span></div><span class="btn-primary" style="background:var(--rust);color:#fff;display:inline-block;">Find my size</span></a>
   <div id="invGrid"></div>
   <div class="incoming-grid" id="incomingCards">
     <div class="incoming-card">
@@ -816,7 +836,7 @@
 
 <div class="cash-strip">
   <strong>Simple prices, no hidden fees</strong>
-  <span>The price we quote is the price you pay, plus tax. No credit check, no waiting, no surprise fees. Call or text for today's price.</span>
+  <span>The price you see is the price you pay, plus tax. No hidden fees, no surprise add-ons. Call or text with any question.</span>
 </div>
 
 <section class="section" id="appointment">
@@ -900,10 +920,12 @@
   <div class="notify-inner">
     <div>
       <div class="notify-title">Get notified about new inventory</div>
-      <div class="notify-sub">New stock goes fast. We'll email you once when it lands, that's it.</div>
+      <div class="notify-sub">New stock goes fast. We'll email you when new trailers land. Unsubscribe anytime.</div>
     </div>
     <form class="notify-form" id="notifyFormWrap" name="notify-signup" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitNotify(event)">
       <input type="hidden" name="form-name" value="notify-signup">
+      <input type="hidden" name="emailconsent" value="yes">
+      <input type="hidden" name="consentver" value="web-2026-10-18">
       <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
       <input type="email" name="email" id="notifyEmail" placeholder="Your email" required>
       <button type="submit">Notify me</button>
@@ -988,6 +1010,7 @@
   <div class="legal-links">
     <a onclick="showPage('privacy')">Privacy Policy</a>
     <a onclick="showPage('terms')">Terms &amp; Disclaimers</a>
+    <a href="/size-finder/">Trailer Size Finder</a>
   </div>
 </div>
 <div class="copyright-bar">© 2026 Lake & Land Rec LLC. All rights reserved.</div>
@@ -997,7 +1020,7 @@
   <div class="legal-page">
     <a class="legal-back" onclick="showPage('home')">← Back to home</a>
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: October 3, 2026</div>
+    <div class="updated">Last updated: October 18, 2026</div>
     <p>This Privacy Policy explains how Lake &amp; Land Rec LLC ("we," "us," or "our") collects, uses, and protects information when you visit lakeandlandrec.com or contact us through the site.</p>
     <h2>Information we collect</h2>
     <p>When you fill out a reservation, notify, or contact form, we collect the details you give us, typically your name, phone number, email address, the stock number you're interested in, and any message you send. We do not ask for or collect payment card numbers, Social Security numbers, or financial account information through this site.</p>
@@ -1009,8 +1032,13 @@
       <li>To respond to your questions and reservation or notify requests</li>
       <li>To hold or follow up on a unit you're interested in</li>
       <li>To contact you about inventory, pricing, or your inquiry</li>
+      <li>To send texts or emails about new arrivals and deals, only if you opted in</li>
       <li>To operate, maintain, and improve the website</li>
     </ul>
+    <h2>Text messages</h2>
+    <p>When you send us a form, you ask us to call or text you about that request, and we reply about it. We send marketing texts (new arrivals and deals) only if you check the box that says so. That box is never pre-checked and is not required to buy anything. Marketing texts are limited to about 4 per month. Message and data rates may apply. Reply STOP to any text to stop, or HELP for help. Mobile numbers and text opt-in consent are never sold or shared with third parties for their own marketing.</p>
+    <h2>Email</h2>
+    <p>Email is optional on our forms. If you give it, we use it to send what you asked for, such as photos, specs or a price. We send deals and new-arrival emails only if you ask for them. Every marketing email includes an unsubscribe link and our mailing address, and we honor unsubscribe requests promptly.</p>
     <h2>How we share information</h2>
     <p>We do not sell your personal information. We share it only with service providers that help us run the site and respond to you, such as our website host and the email or form service that delivers your message. We may also disclose information if required by law or to protect our rights.</p>
     <h2>How long we keep it</h2>
@@ -1828,7 +1856,7 @@
     <div id="reserveFormWrap" class="reserve-form">
       <h3 id="rmUnitName">Reserve this unit</h3>
       <div class="rm-sub" id="rmUnitMeta">Stock# — · —</div>
-      <p id="rmDesc" style="font-size:12.5px;color:var(--muted);margin:0 0 4px;">Hold this unit while we get your paperwork ready. No payment is collected here — our team calls to confirm and set your pickup window.</p>
+      <p id="rmDesc" style="font-size:12.5px;color:var(--muted);margin:0 0 4px;">Hold this unit while we get your paperwork ready. No payment is collected here. We call or text you to confirm and set your pickup time.</p>
       <form name="reserve-unit" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitReserve(event)">
         <input type="hidden" name="form-name" value="reserve-unit">
         <input type="hidden" name="unit" id="rmUnitField">
@@ -1840,13 +1868,14 @@
         <label for="rmDate" id="rmDateLabel">Preferred pickup date</label>
         <input type="date" name="preferred_date" id="rmDate">
         <label for="rmNotes">Notes (optional)</label>
-        <textarea name="notes" id="rmNotes" rows="3" placeholder="Trade-in, financing questions, delivery vs. pickup, etc."></textarea>
-        <button type="submit" class="cta-reserve" id="rmSubmitBtn" style="margin-top:16px;">Request Reservation</button>
+        <textarea name="notes" id="rmNotes" rows="3" placeholder="Questions, best time to call, pickup timing, etc."></textarea>
+        <p style="font-size:11px;line-height:1.45;color:var(--muted);margin:10px 0 0;">By sending, you ask us to call or text you about this unit. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
+        <button type="submit" class="cta-reserve" id="rmSubmitBtn" style="margin-top:12px;">Request Reservation</button>
       </form>
     </div>
     <div class="reserve-success" id="reserveSuccess">
       <h3 id="rmSuccessTitle">Request sent!</h3>
-      <p id="rmSuccessBody" style="font-size:14px;color:var(--panel-2);">Thanks — we've got your reservation request for this unit. Our team will call within one business day to confirm the details and lock in a pickup time that works for you.</p>
+      <p id="rmSuccessBody" style="font-size:14px;color:var(--panel-2);">Thanks! We've got your reservation request for this unit. Our team will call within one business day to confirm the details and lock in a pickup time that works for you.</p>
       <button class="cta-reserve" onclick="closeReserve()">Done</button>
     </div>
   </div>
@@ -1903,8 +1932,9 @@ function imgFallback(img){
   img.onerror=null; img.src=GAL_PH; img.classList.add('placeholder');
 }
 function esc(x){ return (x==null?'':(''+x)).replace(/'/g,"\\'"); }
+function escH(x){ return (x==null?'':(''+x)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function photoItems(u){
-  if(u.photos && u.photos.length){ return u.photos.map(function(p){ return {full:p, base:''}; }); }
+  if(u.photos && u.photos.length){ return u.photos.map(function(p,i){ return {full:p, thumb:(u.thumbs&&u.thumbs[i])||p, base:''}; }); }
   var a=[], sl=(u.slug||u.id||'').toLowerCase();
   for(var i=1;i<=8;i++){ var b='photos/'+sl+'-'+i; a.push({full:b+'.jpg', base:b}); }
   return a;
@@ -1921,10 +1951,10 @@ function invRow(u){
   var sc=stClass(u.status);
   var stock=u.stock||'\u2014';
   var it0=photoItems(u)[0];
-  var thumb='<img class="inv-thumb" src="'+it0.full+'" data-base="'+(it0.base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="showUnit(\''+u.id+'\')" alt="'+esc(u.stock||u.model)+' photo">';
+  var thumb='<img class="inv-thumb" loading="lazy" src="'+(it0.thumb||it0.full)+'" data-base="'+(it0.base||'')+'" data-i="1" onerror="imgFallback(this)" onclick="showUnit(\''+u.id+'\')" alt="'+esc(u.stock||u.model)+' photo">';
   var tag=u.tag?(' <span class="inv-badge hot">'+u.tag+'</span>'):'';
   var used=(u.condition==='Used')?(' <span class="inv-badge used">Used</span>'):'';
-  var priceCell=u.price?(u.price+' + tax'):'Call';
+  var priceCell=u.price?((u.wasPrice?'<span class="inv-was">'+u.wasPrice+'</span> ':'')+u.price+' + tax'):'Call';
   var btn;
   if(u.status==='In Stock') btn='<button class="inv-reserve" onclick="openReserve(\''+esc(u.stock)+'\',\''+esc(u.model)+'\',\''+esc(u.price)+'\')">Reserve</button>';
   else if(u.status==='Sold') btn='<button class="inv-reserve transit" onclick="openReserve(\'Sold\',\''+esc(u.model)+'\',\'Notify when in stock\')">Contact</button>';
@@ -1939,7 +1969,7 @@ function invRow(u){
     +'<td>'+btn+'</td></tr>';
 }
 function renderInvGrid(list){
-  var groups=[["trailer","Utility Trailers \u2014 Trophy"],["pontoon-trailer","Pontoon Trailers \u2014 Trophy"],["pontoon","Pontoon Boats \u2014 Flagship & Lake Lounger"]];
+  var groups=[["trailer","Utility & Yard Trailers \u00b7 Trophy"],["pontoon-trailer","Pontoon Trailers \u00b7 Trophy"],["pontoon","Pontoon Boats \u00b7 Flagship & Lake Lounger"]];
   var html='';
   groups.forEach(function(g){
     var rows=list.filter(function(u){return u.category===g[0] && u.active!==false;});
@@ -2020,14 +2050,24 @@ function showUnit(id){
   var md = document.querySelector('meta[name="description"]');
   if(md && u.seoDesc) md.setAttribute('content', u.seoDesc);
   setUnitLd(u);
-  var _desc = (u.category==='pontoon') ? (u.desc||buildDesc(u)) : buildDesc(u);
+  var _desc = u.intro || ((u.category==='pontoon') ? (u.desc||buildDesc(u)) : buildDesc(u));
+  var _about = '';
+  if(u.desc && u.intro){
+    _about = '<div class="unit-about"><h2 style="font-size:22px;">About this '+(u.category==='pontoon'?'pontoon':'trailer')+'</h2>'
+      + u.desc.split(/\n\s*\n/).slice(1).map(function(par){
+          var lines = par.split('\n').map(function(l){return l.trim();}).filter(Boolean);
+          if(lines.length && lines.every(function(l){return /^[\u2714\u2713\u2022-]/.test(l);}))
+            return '<ul>'+lines.map(function(l){return '<li>'+escH(l.replace(/^[\u2714\u2713\u2022-]\s*/,''))+'</li>';}).join('')+'</ul>';
+          return '<p>'+lines.map(escH).join('<br>')+'</p>';
+        }).join('') + '</div>';
+  }
   if(u.condition==='Used'){ _desc = _desc.replace(/\(new\)/gi,'').replace('Rust-free aluminum, in stock','Clean used unit, in stock'); }
   var statusClass = stClass(u.status);
 
   var items = photoItems(u);
   window._ug = { items: items, i: 0 };
   var thumbs = items.map(function(it, idx){
-    return '<button class="ug-thumb'+(idx===0?' active':'')+'" onclick="ugSet('+idx+')"><img src="'+it.full+'" data-base="'+(it.base||'')+'" data-i="1" onerror="imgFallback(this)" alt=""></button>';
+    return '<button class="ug-thumb'+(idx===0?' active':'')+'" onclick="ugSet('+idx+')"><img loading="lazy" src="'+(it.thumb||it.full)+'" data-base="'+(it.base||'')+'" data-i="1" onerror="imgFallback(this)" alt=""></button>';
   }).join('');
   var galleryHtml =
       '<div class="unit-gallery"><div class="ug-main">'
@@ -2040,7 +2080,7 @@ function showUnit(id){
   var specs = (u.specs||[]).map(function(r){ return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'; }).join('');
   var vin4 = u.vin ? (' \u00b7 VIN \u2026'+(''+u.vin).slice(-4)) : '';
   var condBadge = (u.condition==='Used') ? ' <span class="inv-badge used">Used</span>' : ' <span class="inv-badge new">New</span>';
-  var priceHtml = '<small>Call for price</small>';
+  var priceHtml = u.price ? ((u.wasPrice?'<s aria-label="was '+u.wasPrice+'">'+u.wasPrice+'</s> ':'')+u.price+' <small>+ tax</small>') : '<small>Call for price</small>';
   var ctaLabel = (u.status==='In Stock') ? ('Reserve #'+id) : (u.status==='Sold' ? 'Contact for similar' : 'Notify Me');
   var ctaStock = (u.status==='In Stock') ? id : u.status;
   var ctaPrice = (u.status==='In Stock') ? (u.price||'') : 'Notify when in stock';
@@ -2067,8 +2107,9 @@ function showUnit(id){
     +     '<div class="unit-price">'+priceHtml+'</div></div>'
     +   galleryHtml
     +   '<div class="highlight-row">'+chips+'</div>'
+    +   _about
     +   '<h2 style="font-size:22px;">Specs</h2><table class="unit-specs"><tbody>'+specs+'</tbody></table>'
-    +   '<p class="note">Prices are plus tax. Confirm final build details with Lake & Land Rec.</p>'
+    +   '<p class="note">Price is plus tax, title and registration. Specs come from the manufacturer label; confirm details with us before you buy. Subject to prior sale.</p>'
     +   '<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">'+cta
     +     '<a class="callbtn-outline" href="tel:7157974782">Call 715-797-4782</a>'
     +     '<a class="callbtn-outline" href="sms:7157974782">Text us</a></div>'
@@ -2077,16 +2118,17 @@ function showUnit(id){
   showPage('unit');
 }
 
-var POPULAR = [
-  {stock:"T1954", model:"5\u00d710 Diamond Plate", price:"$2,830 + tax"},
-  {stock:"T1683", model:"5\u00d78 Diamond Plate", price:"$3,180 + tax"},
-  {stock:"T1675", model:"5\u00d78 Utility (Tip-In)", price:"$2,680 + tax"},
-  {stock:"T1745", model:"5\u00d710 Diamond Plate", price:"$3,380 + tax"},
-  {stock:"T1621", model:"7\u00d716 Utility (Tip-In)", price:"$5,580 + tax"},
-  {stock:"T1687", model:"7\u00d716 Aluminum HD", price:"$6,880 + tax"}
-];
+var POPULAR = [];
+function buildPopular(){
+  var seen={}, out=[];
+  var list=UNIT_ORDER.map(function(id){return UNITS[id];}).filter(function(u){return u && u.status==='In Stock' && u.photos && u.photos.length;});
+  list.filter(function(u){return u.wasPrice;}).forEach(function(u){ if(out.length<6){ out.push(u); seen[u.size||u.id]=1; } });
+  list.forEach(function(u){ var k=u.size||u.id; if(out.length<6 && !seen[k] && out.indexOf(u)<0){ out.push(u); seen[k]=1; } });
+  POPULAR = out.map(function(u){ return {stock:u.id, model:u.model, price:(u.wasPrice?'Was '+u.wasPrice+', now ':'')+u.price+' + tax'}; });
+}
 function initSpinBanner(){
   var stage=document.getElementById('sbStage'); if(!stage) return; stage.innerHTML='';
+  buildPopular(); if(!POPULAR.length){ stage.style.display='none'; return; }
   var dots=document.getElementById('sbDots'); if(dots) dots.innerHTML='';
   POPULAR.forEach(function(p,i){
     var u=UNITS[p.stock];
@@ -2202,15 +2244,15 @@ function openReserve(stockNo, unitName, price){
   document.getElementById('rmUnitMeta').textContent = isNotify ? ('Stock# ' + stockNo) : ('Stock# ' + stockNo + ' · ' + price);
   document.getElementById('rmDesc').textContent = isNotify
     ? "Leave your info and we'll call or text you the moment this unit is back in stock. No payment or commitment required."
-    : 'Hold this unit while we get your paperwork ready. No payment is collected here — our team calls to confirm and set your pickup window.';
+    : 'Hold this unit while we get your paperwork ready. No payment is collected here. We call or text you to confirm and set your pickup time.';
   document.getElementById('rmDateLabel').textContent = isNotify ? 'Preferred contact method / notes' : 'Preferred pickup date';
   document.getElementById('rmDate').style.display = isNotify ? 'none' : 'block';
   document.getElementById('rmDateLabel').style.display = isNotify ? 'none' : 'block';
   document.getElementById('rmSubmitBtn').textContent = isNotify ? 'Notify Me' : 'Request Reservation';
   document.getElementById('rmSuccessTitle').textContent = isNotify ? "You're on the list!" : 'Request sent!';
   document.getElementById('rmSuccessBody').textContent = isNotify
-    ? "Thanks — we'll reach out the moment this unit is back in stock."
-    : "Thanks — we've got your reservation request for this unit. Our team will call within one business day to confirm the details and lock in a pickup time that works for you.";
+    ? "Thanks! We'll reach out the moment this unit is back in stock."
+    : "Thanks! We've got your request for this unit. We'll call or text you within one business day to confirm the details and set a pickup time that works for you.";
   document.getElementById('reserveFormWrap').classList.remove('hide');
   document.getElementById('reserveSuccess').classList.remove('show');
   document.getElementById('rmName').value = '';
@@ -2248,10 +2290,17 @@ function submitLead(e){
     document.getElementById('leadPhone').style.borderColor = phone ? '' : '#B5441F';
     return;
   }
+  const email = document.getElementById('leadEmail').value.trim();
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ document.getElementById('leadEmail').style.borderColor = '#B5441F'; return; }
   netlifySubmit('text-me-back', {
     name: name,
     phone: phone,
-    hauling: document.getElementById('leadType').value
+    email: email,
+    hauling: document.getElementById('leadType').value,
+    smsconsent: document.getElementById('leadSms').checked ? 'yes' : 'no',
+    emailconsent: (email && document.getElementById('leadEmailOk').checked) ? 'yes' : 'no',
+    consentver: 'web-2026-10-18',
+    page: location.pathname + location.hash
   }).catch(()=>{});
   document.getElementById('leadFormWrap').style.display = 'none';
   document.getElementById('leadSuccess').style.display = 'block';
@@ -2261,7 +2310,7 @@ function submitNotify(e){
   e.preventDefault();
   const email = document.getElementById('notifyEmail').value.trim();
   if(!email){ document.getElementById('notifyEmail').style.borderColor = '#B5441F'; return; }
-  netlifySubmit('notify-signup', { email: email }).catch(()=>{});
+  netlifySubmit('notify-signup', { email: email, emailconsent: 'yes', consentver: 'web-2026-10-18' }).catch(()=>{});
   document.getElementById('notifyFormWrap').style.display = 'none';
   document.getElementById('notifySuccess').style.display = 'block';
 }

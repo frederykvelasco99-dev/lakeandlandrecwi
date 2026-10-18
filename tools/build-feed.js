@@ -22,17 +22,18 @@ const typeOf = (u) => u.category === 'pontoon' ? 'Boats > Pontoon Boats' : u.cat
 const clean = (s) => String(s || '').replace(/\s+/g, ' ').trim();
 const csv = (v) => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
 
-const head = ['id', 'title', 'description', 'availability', 'condition', 'price', 'link', 'image_link', 'additional_image_link', 'brand', 'product_type', 'item_group_id'];
+const head = ['id', 'title', 'description', 'availability', 'condition', 'price', 'sale_price', 'link', 'image_link', 'additional_image_link', 'brand', 'product_type', 'item_group_id'];
 const rows = [head];
 let skipped = 0;
 for (const u of units) {
   if (u.active === false || u.status === 'Sold') continue;
-  const imgs = photoList(u); const price = priceOf(u);
+  const imgs = photoList(u); const now = priceOf(u); const was = priceOf({ price: u.wasPrice });
+  const price = was && parseFloat(was) > parseFloat(now) ? was : now; const sale = price === now ? '' : now;
   const id = String(u.stock || u.id || '').trim();
   if (!id || !imgs.length || !price) { skipped++; continue; } // Meta needs an id, a photo and a price
-  const title = clean(u.seoTitle || u.fullName || [u.year, brandOf(u), u.model].filter(Boolean).join(' ')).slice(0, 150);
-  const desc = clean(u.seoDesc || u.desc || title + '. In Owen, WI. Call or text 715-797-4782.').slice(0, 5000);
-  rows.push([id, title, desc, availability(u.status || 'In Stock'), u.condition === 'Used' ? 'used' : 'new', price,
+  const title = clean(u.fullName || u.seoTitle || [u.year, brandOf(u), u.model].filter(Boolean).join(' ')).slice(0, 150);
+  const desc = clean(u.desc || u.seoDesc || title + '. In Owen, WI. Call or text 715-797-4782.').slice(0, 5000);
+  rows.push([id, title, desc, availability(u.status || 'In Stock'), u.condition === 'Used' ? 'used' : 'new', price, sale,
     SITE + '/#unit-' + encodeURIComponent(u.id || id), imgs[0], imgs.slice(1, 10).join(','), brandOf(u), typeOf(u), u.category || 'trailer']);
 }
 fs.writeFileSync(path.join(root, 'facebook-feed.csv'), rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');

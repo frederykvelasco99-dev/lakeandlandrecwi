@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trailer Size Finder | What size trailer do I need? | Lake &amp; Land Rec, Owen WI</title>
+<meta name="description" content="Pick what you haul and what you tow with. We match the right Trophy aluminum trailer size, draw it to scale, and show what is on our lot in Owen, WI today. Prices plus tax.">
+<link rel="canonical" href="https://www.lakeandlandrec.com/size-finder/">
+<meta property="og:title" content="What size trailer do you need? | Lake & Land Rec">
+<meta property="og:description" content="3 quick taps: what you haul, what you tow with, and the right trailer on our lot in Owen, WI.">
+<meta property="og:url" content="https://www.lakeandlandrec.com/size-finder/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.lakeandlandrec.com/photos/promo-4.jpg">
+<link rel="icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one problem-solving flow on a phone. Navy hero asks the question, three numbered steps answer it (the order is real), the answer lands on a to-scale trailer floor with a text-me form. Signal yellow is the single loud color. */
+:root{
+  --bg:#f3f4f2; --panel:#ffffff; --ink:#111c27; --muted:#5a6570; --line:#d3d8da;
+  --navy:#0f2a44; --on-navy:#f4f6f7; --navy-muted:#a9bccd;
+  --yellow:#ffc21a; --on-yellow:#1d1500; --ok:#1d7a4a; --warn:#9a5a00;
+  --floor:#dcc9a3; --floor-line:#bfa77b; --item:#0f2a44; --item-fill:rgba(15,42,68,.16);
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c131a; --panel:#141e28; --ink:#e8edf0; --muted:#9ba8b3; --line:#2a3743;
+  --navy:#08182a; --on-navy:#f4f6f7; --navy-muted:#93a9be;
+  --ok:#5cc58e; --warn:#f0a94a; --floor:#5c4d34; --floor-line:#7e6b4a; --item:#9fd0ff; --item-fill:rgba(159,208,255,.2); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c131a; --panel:#141e28; --ink:#e8edf0; --muted:#9ba8b3; --line:#2a3743;
+  --navy:#08182a; --on-navy:#f4f6f7; --navy-muted:#93a9be;
+  --ok:#5cc58e; --warn:#f0a94a; --floor:#5c4d34; --floor-line:#7e6b4a; --item:#9fd0ff; --item-fill:rgba(159,208,255,.2); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);margin:0}
+.in{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;text-transform:uppercase;letter-spacing:.005em}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy)}
+.hero .in{padding-block:14px 30px;display:grid;gap:14px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font:700 15px var(--display);letter-spacing:.08em;text-transform:uppercase}
+.brand small{font:500 12px var(--mono);letter-spacing:.06em;color:var(--navy-muted);margin-left:6px;text-transform:none}
+.lang{display:inline-flex;border:1px solid var(--navy-muted);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;padding:6px 12px;font:600 13px var(--body);color:var(--on-navy);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--yellow);color:var(--on-yellow)}
+.hero h1{font-size:clamp(40px,10.5vw,96px);line-height:.88;font-weight:800;overflow-wrap:break-word}
+.hero .in > *{min-width:0}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.sub{font-size:18px;max-width:46ch;color:var(--on-navy)}
+.preview{font:500 11px var(--mono);color:var(--navy-muted);letter-spacing:.04em}
+/* steps */
+main .in{display:grid;gap:30px;padding-block:24px 40px}
+.step{display:grid;gap:12px}
+.sh{display:flex;align-items:center;gap:12px}
+.num{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:800 20px var(--display)}
+.sh h2{font-size:clamp(26px,5vw,34px);line-height:1;font-weight:800}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{text-align:left;background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:12px;cursor:pointer;display:grid;gap:4px;min-height:84px;align-content:start}
+.tile b{font:700 20px/1.05 var(--display);text-transform:uppercase}
+.tile span{font-size:13px;color:var(--muted)}
+.tile[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.tile[aria-pressed="true"] span{color:var(--bg);opacity:.8}
+.cat{font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+/* answer */
+.answer{background:var(--panel);border:3px solid var(--ink);border-radius:12px;overflow:hidden;display:grid}
+.ahead{background:var(--yellow);color:var(--on-yellow);padding:14px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:6px 16px}
+.ahead .k{font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.big{font:800 clamp(56px,13vw,104px)/.85 var(--display);text-transform:uppercase}
+.ahead .tag{font:700 18px var(--display);text-transform:uppercase}
+.abody{padding:16px;display:grid;gap:14px}
+.fitsvg{width:100%;height:auto;max-width:100%;display:block}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.fact{font:600 14px var(--body);border:1.5px solid currentColor;border-radius:999px;padding:4px 12px}
+.fact.ok{color:var(--ok)} .fact.warn{color:var(--warn)} .fact.n{color:var(--ink)}
+.why{font-size:17px;max-width:60ch}
+.tow{font-size:15px;color:var(--muted);max-width:62ch}
+.lot{display:grid;gap:8px}
+.units{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.unit{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:2px;background:var(--bg)}
+.unit b{font:700 19px var(--display);text-transform:uppercase}
+.unit .p{font:500 15px var(--mono);font-variant-numeric:tabular-nums}
+.unit .s{font:500 12px var(--mono);color:var(--muted)}
+.unit .c{font:600 11px var(--mono);color:var(--warn);letter-spacing:.06em}
+/* form */
+form{background:var(--navy);color:var(--on-navy);border-radius:10px;padding:16px;display:grid;gap:12px}
+form h3{font-size:28px;font-weight:800}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+label.f{display:grid;gap:4px;font:600 13px var(--body)}
+input[type=text],input[type=tel],input[type=email]{font:500 17px var(--body);padding:12px;border-radius:8px;border:2px solid transparent;background:var(--on-navy);color:#111c27;width:100%}
+input:focus-visible{border-color:var(--yellow);outline:none}
+.consent{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start;font-size:13px;line-height:1.45;color:var(--navy-muted)}
+.consent input{width:22px;height:22px;margin-top:2px;accent-color:var(--yellow)}
+.consent a,.legal a{color:inherit;text-decoration:underline}
+.go{background:var(--yellow);color:var(--on-yellow);border:0;border-radius:10px;padding:14px 18px;font:800 22px var(--display);text-transform:uppercase;cursor:pointer;letter-spacing:.02em}
+.err{color:var(--yellow);font-size:14px;font-weight:600}
+.done{display:grid;gap:6px}
+[hidden]{display:none !important}
+.done h3{color:var(--yellow)}
+/* trust + faq */
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.trust div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:4px}
+.trust b{font:800 24px/1 var(--display);text-transform:uppercase}
+.trust span{color:var(--muted);font-size:14px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+summary{font:700 19px var(--display);text-transform:uppercase;cursor:pointer}
+details p{margin-top:8px;color:var(--muted);max-width:66ch}
+.faq{display:grid;gap:8px}
+.legal{font-size:12px;color:var(--muted);display:grid;gap:6px;border-top:1px solid var(--line);padding-top:14px}
+.privacy{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px}
+.privacy h2{font-size:26px}
+.privacy h3{font-size:17px;text-transform:none;font-family:var(--body);font-weight:700}
+.privacy p,.privacy li{font-size:14px;color:var(--muted);max-width:70ch}
+.privacy ul{margin:0;padding-left:18px;display:grid;gap:4px}
+@media (prefers-reduced-motion:no-preference){.answer{animation:pop .25s ease}@keyframes pop{from{transform:translateY(6px)}to{transform:none}}}
+.home{color:var(--on-navy);font-size:13px;text-decoration:underline;opacity:.85}
+.f.full{grid-column:1/-1}
+.disc{font-size:12px;line-height:1.45;color:var(--navy-muted);margin-top:4px}
+.unit a{color:inherit}
+.hp{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="in">
+  <div class="bar"><span class="brand">Lake &amp; Land Rec<small data-t="where"></small></span>
+    <div class="lang" role="group" aria-label="Language"><button type="button" id="l-en" aria-pressed="true">English</button><button type="button" id="l-es" aria-pressed="false">Español</button></div></div>
+  <h1 data-h="h1"></h1>
+  <p class="sub" data-t="sub"></p>
+  <p class="preview"><a class="home" href="/">lakeandlandrec.com</a> · <a class="home" href="tel:7157974782">715-797-4782</a></p>
+</div></header>
+
+<main><div class="in">
+  <section class="step" aria-labelledby="s1"><div class="sh"><span class="num">1</span><h2 id="s1" data-t="s1"></h2></div><div id="haul"></div></section>
+  <section class="step" aria-labelledby="s2"><div class="sh"><span class="num">2</span><h2 id="s2" data-t="s2"></h2></div><div class="tiles" id="tow"></div></section>
+  <section class="step" aria-labelledby="s3"><div class="sh"><span class="num">3</span><h2 id="s3" data-t="s3"></h2></div>
+    <div class="answer" aria-live="polite">
+      <div class="ahead"><div><div class="k" data-t="rec"></div><div class="big" id="size"></div></div><div class="tag" id="sizeSub"></div></div>
+      <div class="abody">
+        <svg class="fitsvg" id="fit" viewBox="0 0 640 285" role="img"></svg>
+        <div class="facts" id="facts"></div>
+        <p class="why" id="why"></p>
+        <p class="tow" id="towTxt"></p>
+        <div class="lot"><div class="cat" id="lotT"></div><div class="units" id="units"></div></div>
+        <form id="lead" name="size-finder" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="size-finder">
+          <input type="hidden" name="haul" id="h-haul"><input type="hidden" name="tow" id="h-tow"><input type="hidden" name="recommended" id="h-rec">
+          <input type="hidden" name="consentver" value="sizefinder-2026-10-18"><input type="hidden" name="lang" id="h-lang" value="en">
+          <p class="hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div id="formIn">
+            <h3 data-t="fh"></h3>
+            <div class="fields"><label class="f" for="f-name"><span data-t="fn"></span><input type="text" id="f-name" name="name" autocomplete="name" required></label>
+              <label class="f" for="f-phone"><span data-t="fp"></span><input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="715-000-0000" required></label>
+              <label class="f full" for="f-email"><span data-t="fe"></span><input type="email" id="f-email" name="email" autocomplete="email" placeholder="you@email.com"></label></div>
+            <label class="consent" for="f-ok"><input type="checkbox" id="f-ok" name="smsconsent" value="yes"><span data-t="consent"></span></label>
+            <label class="consent" for="f-eok"><input type="checkbox" id="f-eok" name="emailconsent" value="yes"><span data-t="econsent"></span></label>
+            <p class="err" id="err" hidden></p>
+            <button class="go" type="submit" data-t="send"></button>
+            <p class="disc" data-t="disc"></p>
+          </div>
+          <div class="done" id="done" hidden><h3 data-t="th"></h3><p data-t="tp"></p></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Why Lake and Land" id="trust"></section>
+
+  <section class="step" aria-labelledby="fq"><div class="sh"><h2 id="fq" data-t="faqh"></h2></div><div class="faq" id="faq"></div></section>
+
+  <section class="privacy" id="privacy" aria-labelledby="ph"></section>
+
+  <footer class="legal" id="legal"></footer>
+</div></main>
+
+<script>
+const T = {
+ en:{where:"Owen, WI · Authorized Trophy Trailers dealer",h1:"What are you <em>hauling?</em>",sub:"Tap it. We match the right Trophy aluminum trailer, draw it to scale, and show what's on our lot today.",
+  s1:"What do you haul?",s2:"What do you tow with?",s3:"Your trailer",rec:"Our pick for you",mow:"Mowers",ride:"ATVs and side by sides",other:"Other",
+  fits:"Fits",snug:"Fits, snug",chute:"chute folded up",room:(s,l)=>`${s} in to spare on the sides · ${l} in at the back`,floor:(w,l)=>`Floor ${w} × ${l} in`,load:w=>`Load about ${w} lb`,
+  single:"Single axle",tandem:"Tandem axle",ramp:"Tip-in ramp",yard:"Yard trailer",lotT:s=>`On our lot now · ${s}`,none:"None on the lot in this size. Ask about incoming 2027 units.",clear:w=>`CLEARANCE · was ${w}`,stock:"Stock",tax:"+ tax",
+  fh:"Get the price and photos for your size",fn:"Name",fp:"Mobile number",fe:"Email (optional) · we'll send the photo pack and specs",send:"Send me prices",need:"Add your name and a mobile number.",bademail:"Check your email address, or leave it blank.",
+  econsent:"Also email me deals and new arrivals. Unsubscribe anytime.",
+  disc:"By tapping Send me prices, you ask us to call or text you about this request. A real person answers. The boxes above are optional and not required to buy.",fail:"Couldn't send. Check your signal, or call or text 715-797-4782.",
+  consent:'Yes, Lake &amp; Land Rec may text me at this number about new arrivals and deals, including automated texts. Up to 4 msgs/month. Consent is not required to buy. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. See our <a href="#privacy">privacy policy</a>.',
+  th:"Got it. We'll text you shortly.",tp:"Freddy or Brian will send photos and the price + tax for your size. Want it sooner? Call or text 715-797-4782.",
+  trust:[["18 years","Selling trailers in Clark County"],["No rust","All-aluminum, made in the USA"],["Price + tax","No doc fees, no surprises"],["Hablamos español","Te atendemos en tu idioma"]],
+  faqh:"Quick answers",
+  faq:[["Do I need trailer brakes?","Wisconsin requires trailer brakes at a gross weight of 3,000 lb or more. Our single-axle trailers are rated 2,990 lb GVWR, so no brakes and no brake controller. Rules differ by state."],
+   ["Will my truck or SUV tow it?","Check the tow rating on your driver door sticker or in the owner's manual. Most of our single axles weigh about 550 to 900 lb empty, and any full-size or mid-size pickup tows everything on our lot."],
+   ["Is the price the final price?","The price you see is the price, plus sales tax. No doc fees or prep fees."],
+   ["Can I tow it with an electric truck?","Yes. An open, low aluminum trailer with the ramp folded inside catches far less wind than a tall enclosed trailer, so you keep more range. Slower speeds help a lot."]],
+  ptitle:"Privacy policy",
+  priv:[["What we collect","Your name, phone number, email if you give it, what you want to haul, and your preferred language."],["How we use it","To answer your request and send prices and photos. We send marketing texts or emails only if you checked that box. Reply STOP to any text, or use the unsubscribe link in any email."],["What we never do","We don't sell or rent your information, and we never share your mobile number or text consent with others for their marketing. We share it only with services that help us run the dealership, like our email and website hosts."],["Your choices","Ask us to see, correct or delete your information: call or text 715-797-4782 or email freddylakeland@gmail.com."]],
+  pupd:"Lake & Land Rec LLC · 837 W 3rd St, Owen, WI 54460 · Updated October 2026",
+  legal:["Sizes and weights are typical ranges for each type of machine, not a guarantee for a specific model. Measure your machine, or bring its specs, and we'll confirm the fit before you buy.","Always check your vehicle's tow rating on the driver door sticker or in the owner's manual. Never exceed the trailer's GVWR.","Trophy is a trademark of Trinity Products, Inc. Lake & Land Rec is an authorized Trophy Trailers dealer. Prices are plus sales tax, subject to availability."]},
+ es:{where:"Owen, WI · Distribuidor autorizado de Trophy Trailers",h1:"¿Qué vas a <em>transportar?</em>",sub:"Tócalo. Te decimos qué remolque Trophy de aluminio te queda, lo dibujamos a escala y te mostramos lo que tenemos hoy.",
+  s1:"¿Qué transportas?",s2:"¿Con qué lo jalas?",s3:"Tu remolque",rec:"Te recomendamos",mow:"Podadoras",ride:"Cuatrimotos y side by side",other:"Otros",
+  fits:"Cabe",snug:"Cabe, justo",chute:"con el chute arriba",room:(s,l)=>`Sobran ${s} in a los lados · ${l} in atrás`,floor:(w,l)=>`Piso ${w} × ${l} in`,load:w=>`Carga aprox. ${w} lb`,
+  single:"Un eje",tandem:"Doble eje",ramp:"Rampa abatible",yard:"Remolque de jardín",lotT:s=>`Disponibles hoy · ${s}`,none:"No tenemos de este tamaño hoy. Pregunta por las unidades 2027 que vienen.",clear:w=>`LIQUIDACIÓN · antes ${w}`,stock:"Stock",tax:"+ impuestos",
+  fh:"Recibe el precio y las fotos de tu tamaño",fn:"Nombre",fp:"Celular",fe:"Correo (opcional) · te mandamos las fotos y especificaciones",send:"Enviarme precios",need:"Escribe tu nombre y un número de celular.",bademail:"Revisa tu correo o déjalo en blanco.",
+  econsent:"También mándenme ofertas y novedades por correo. Puedo darme de baja cuando quiera.",
+  disc:"Al tocar Enviarme precios, nos pides que te llamemos o te escribamos sobre esta solicitud. Te atiende una persona. Las casillas de arriba son opcionales y no son requisito para comprar.",fail:"No se pudo enviar. Revisa tu señal o llámanos o escríbenos al 715-797-4782.",
+  consent:'Sí, Lake &amp; Land Rec puede enviarme mensajes de texto a este número sobre novedades y ofertas, incluso mensajes automáticos. Hasta 4 mensajes al mes. No es requisito para comprar. Pueden aplicar cargos de mensajes y datos. Responde STOP para dejar de recibirlos o HELP para ayuda. Consulta nuestra <a href="#privacy">política de privacidad</a>.',
+  th:"Listo. Te escribimos en un momento.",tp:"Freddy o Brian te mandan fotos y el precio + impuestos de tu tamaño. ¿Lo quieres antes? Llama o escribe al 715-797-4782.",
+  trust:[["18 años","Vendiendo remolques en Clark County"],["Sin óxido","Todo de aluminio, hecho en EE. UU."],["Precio + impuestos","Sin cargos extra ni sorpresas"],["Hablamos español","Te atendemos en tu idioma"]],
+  faqh:"Respuestas rápidas",
+  faq:[["¿Necesito frenos en el remolque?","En Wisconsin se requieren frenos en remolques de 3,000 lb o más de peso bruto. Nuestros remolques de un eje están clasificados en 2,990 lb GVWR, así que no llevan frenos ni necesitas controlador. Las reglas cambian según el estado."],
+   ["¿Mi camioneta o SUV lo puede jalar?","Revisa la capacidad de arrastre en la etiqueta de la puerta del conductor o en el manual. La mayoría de nuestros remolques de un eje pesan entre 550 y 900 lb vacíos, y cualquier pickup mediana o grande jala todo lo que tenemos."],
+   ["¿El precio es el precio final?","El precio que ves es el precio, más impuestos. Sin cargos de trámite ni de preparación."],
+   ["¿Lo puedo jalar con una camioneta eléctrica?","Sí. Un remolque de aluminio abierto y bajo, con la rampa doblada adentro, frena mucho menos el aire que uno cerrado y alto, así que pierdes menos autonomía. Manejar más despacio ayuda mucho."]],
+  ptitle:"Política de privacidad",
+  priv:[["Qué datos guardamos","Tu nombre, teléfono, correo si nos lo das, qué quieres transportar y tu idioma."],["Para qué los usamos","Para responder tu solicitud y mandarte precios y fotos. Solo te mandamos promociones por texto o correo si marcaste esa casilla. Responde STOP a cualquier texto o usa el enlace para darte de baja en cualquier correo."],["Lo que nunca hacemos","No vendemos ni rentamos tus datos, y nunca compartimos tu número ni tu consentimiento de textos con otros para su publicidad. Solo los compartimos con los servicios que nos ayudan a operar, como el correo y la página web."],["Tus opciones","Pídenos ver, corregir o borrar tus datos: llama o escribe al 715-797-4782 o al correo freddylakeland@gmail.com."]],
+  pupd:"Lake & Land Rec LLC · 837 W 3rd St, Owen, WI 54460 · Actualizado en octubre de 2026",
+  legal:["Las medidas y pesos son rangos típicos de cada tipo de máquina, no una garantía para un modelo específico. Mide tu máquina o trae sus especificaciones y confirmamos que cabe antes de comprar.","Revisa siempre la capacidad de arrastre en la etiqueta de la puerta del conductor o en el manual. Nunca excedas el GVWR del remolque.","Trophy es marca registrada de Trinity Products, Inc. Lake & Land Rec es distribuidor autorizado de Trophy Trailers. Precios más impuestos, sujetos a disponibilidad."]}
+};
+const LOADS = [
+ {k:"push",g:"mow",en:["Push mower or lawn tractor","up to a 48 in deck"],es:["Podadora de empuje o tractorcito","deck de hasta 48 in"],w:48,len:72,wt:500,size:"5x8",
+  why:{en:"A push mower or small lawn tractor and your yard tools fit on a 5×8 with room to spare.",es:"Una podadora de empuje o un tractorcito y tus herramientas caben en un 5×8 con espacio de sobra."}},
+ {k:"z52",g:"mow",en:["Zero-turn, 52 in deck","about 64 in wide"],es:["Zero-turn, deck de 52 in","unas 64 in de ancho"],w:64.5,wUp:54,len:81,wt:1500,size:"6.5x10",
+  why:{en:"A 52 inch commercial deck is about 64 inches wide with the chute down. On a 6.5 ft wide trailer it drives straight on, no folding needed.",es:"Un deck comercial de 52 in mide unas 64 in de ancho con el chute abajo. En un remolque de 6.5 pies sube directo, sin doblar nada."}},
+ {k:"z60",g:"mow",en:["Zero-turn, 60 in deck","about 73 in wide"],es:["Zero-turn, deck de 60 in","unas 73 in de ancho"],w:73.5,wUp:63,len:88,wt:1700,size:"6.5x10",
+  why:{en:"A 60 inch deck is about 73 inches wide with the chute down. It fits a 6.5 ft wide trailer, and the 10 ft deck leaves room for a trimmer and blower.",es:"Un deck de 60 in mide unas 73 in de ancho con el chute abajo. Cabe en un remolque de 6.5 pies y el piso de 10 pies deja lugar para la desbrozadora y la sopladora."}},
+ {k:"z72",g:"mow",en:["Zero-turn, 72 in deck","about 83 in wide"],es:["Zero-turn, deck de 72 in","unas 83 in de ancho"],w:83,wUp:74,len:92,wt:1750,size:"7x14",
+  why:{en:"A 72 inch deck is about 83 inches wide with the chute down, wider than any utility floor. Fold the chute up and the 7×14 carries it with room for your gear.",es:"Un deck de 72 in mide unas 83 in con el chute abajo, más que cualquier piso. Con el chute arriba, el 7×14 lo lleva con espacio para tu equipo."}},
+ {k:"z2",g:"mow",en:["Two 60 in zero-turns","crew trailer"],es:["Dos zero-turn de 60 in","remolque para cuadrilla"],w:73.5,wUp:63,len:176,wt:3400,size:"7x16",
+  why:{en:"Two commercial mowers run about 3,000 to 3,400 lb and nearly 15 ft nose to tail. That's a job for the 7×16 heavy-duty tandem.",es:"Dos podadoras comerciales pesan unas 3,000 a 3,400 lb y miden casi 15 pies de punta a punta. Eso es para el 7×16 doble eje reforzado."}},
+ {k:"atv",g:"ride",en:["One ATV","about 48 in wide"],es:["Una cuatrimoto","unas 48 in de ancho"],w:48,len:84,wt:750,size:"5x8",
+  why:{en:"A full-size ATV is about 48 inches wide and 7 ft long. The 5×8 fits it with room for a cooler.",es:"Una cuatrimoto grande mide unas 48 in de ancho y 7 pies de largo. El 5×8 la lleva con espacio para la hielera."}},
+ {k:"atv2",g:"ride",en:["Two ATVs","nose to tail"],es:["Dos cuatrimotos","una detrás de otra"],w:48,len:166,wt:1500,size:"7x16",
+  why:{en:"Two ATVs nose to tail need about 14 ft. The 7×16 loads them easy with room to strap.",es:"Dos cuatrimotos una tras otra necesitan unos 14 pies. El 7×16 las carga fácil y con espacio para amarrarlas."}},
+ {k:"utvc",g:"ride",en:["Compact UTV","about 50 in wide"],es:["UTV compacto","unas 50 in de ancho"],w:50,len:105,wt:1100,size:"5x10",
+  why:{en:"Compact 50 inch UTVs fit the 60 inch floor of a 5×10.",es:"Los UTV compactos de 50 in caben en el piso de 60 in de un 5×10."}},
+ {k:"sxs",g:"ride",en:["2-seat side by side","about 62 to 65 in wide"],es:["Side by side de 2 plazas","unas 62 a 65 in de ancho"],w:64,len:120,wt:1600,size:"6.5x12",
+  why:{en:"A 2-seat side by side is about 62 to 65 inches wide and 10 ft long. The 6.5×12 carries it with 2 ft to spare; go 7×14 for gear and coolers.",es:"Un side by side de 2 plazas mide unas 62 a 65 in de ancho y 10 pies de largo. El 6.5×12 lo lleva con 2 pies de sobra; el 7×14 si llevas equipo."}},
+ {k:"crew",g:"ride",en:["Crew side by side","4 to 6 seats"],es:["Side by side de 4 a 6 plazas","cabina doble"],w:64,len:150,wt:2100,size:"7x16",est:true,
+  why:{en:"Crew side by sides are long and heavy. The 7×16 tandem is the safe pick, and we confirm your model's length before you buy.",es:"Los side by side de cabina doble son largos y pesados. El 7×16 doble eje es lo seguro, y confirmamos el largo de tu modelo antes de comprar."}},
+ {k:"yard",g:"other",en:["Lawn and garden","mulch, leaves, firewood"],es:["Jardín","mantillo, hojas, leña"],w:30,len:50,wt:400,size:"3x5",
+  why:{en:"For yard work, the 3×5 aluminum yard trailer pulls behind a lawn tractor or ATV.",es:"Para el jardín, el remolque de aluminio 3×5 se engancha a un tractorcito o cuatrimoto."}}
+];
+const TOWS = [
+ {k:"half",en:["Full-size pickup","half ton and up"],es:["Pickup grande","media tonelada o más"],t:{en:"A full-size pickup tows everything on our lot, even the heavy-duty tandems. Confirm your rating on the door sticker.",es:"Una pickup grande jala todo lo que tenemos, hasta los doble eje reforzados. Confirma tu capacidad en la etiqueta de la puerta."}},
+ {k:"mid",en:["Mid-size pickup",""],es:["Pickup mediana",""],t:{en:"Mid-size pickups tow everything on our lot. Confirm your rating on the door sticker.",es:"Las pickup medianas jalan todo lo que tenemos. Confirma tu capacidad en la etiqueta de la puerta."}},
+ {k:"small",en:["Compact pickup or SUV",""],es:["Pickup compacta o SUV",""],t:{en:"Many compact pickups and SUVs are rated from about 1,500 to 4,000 lb. Compare your door sticker with the loaded weight.",es:"Muchas pickup compactas y SUV aguantan de 1,500 a 4,000 lb aprox. Compara la etiqueta de tu puerta con el peso cargado."}},
+ {k:"ev",en:["Electric truck",""],es:["Camioneta eléctrica",""],t:{en:"An open aluminum trailer with the ramp folded inside costs far less range than a tall enclosed trailer. Keep it near 55 to 60 mph and check your rating.",es:"Un remolque de aluminio abierto con la rampa doblada adentro te quita mucha menos autonomía que uno cerrado y alto. Maneja a 55 o 60 mph y revisa tu capacidad."}}
+];
+const SIZES = {"3x5":{w:36,l:60,ax:"single",gv:800,empty:150,yard:1},"5x8":{w:60,l:96,ax:"single",gv:2200,empty:500},"5x10":{w:60,l:120,ax:"single",gv:2200,empty:550},"6.5x10":{w:78,l:120,ax:"single",gv:2990,empty:800},"6.5x12":{w:78,l:144,ax:"single",gv:2990,empty:900},"7x14":{w:82,l:168,ax:"single",gv:2990,empty:1100},"7x16":{w:82,l:192,ax:"tandem",gv:6000,empty:1400}};
+// Live lot: read from the same inventory.json the main site uses.
+let LOT = [];
+fetch("/inventory.json", {cache:"no-store"}).then(r=>r.json()).then(d=>{
+  LOT = ((d && d.units) || []).filter(u=>u.active!==false && u.status==="In Stock" && u.size).map(u=>({
+    s:u.stock, z:u.size, m:(u.year?u.year+" · ":"")+u.model, p:u.priceNum||parseInt(String(u.price).replace(/[^0-9]/g,""),10)||0,
+    q:(u.qty>1?u.qty:0), was:u.wasPrice?parseInt(u.wasPrice.replace(/[^0-9]/g,""),10):0, id:u.id }));
+  render();
+}).catch(()=>{});
+let lang = "en", haul = "z60", tow = "half";
+try{ const q = localStorage.getItem("fit-lang"); if(q==="es"||q==="en") lang = q; }catch(_){}
+const $ = id => document.getElementById(id);
+const money = n => "$" + n.toLocaleString("en-US");
+function tiles(list, cur, attr){ return list.map(x=>`<button type="button" class="tile" id="${attr}-${x.k}" data-${attr}="${x.k}" aria-pressed="${x.k===cur}"><b>${x[lang][0]}</b>${x[lang][1]?`<span>${x[lang][1]}</span>`:""}</button>`).join(""); }
+function render(){
+  const t = T[lang]; document.documentElement.lang = lang;
+  $("l-en").setAttribute("aria-pressed", lang==="en"); $("l-es").setAttribute("aria-pressed", lang==="es");
+  document.querySelectorAll("[data-t]").forEach(el=>{ const v = t[el.dataset.t]; if(typeof v==="string") el.innerHTML = v; });
+  document.querySelector("[data-h]").innerHTML = t.h1;
+  $("haul").innerHTML = ["mow","ride","other"].map(g=>`<div class="cat">${t[g]}</div><div class="tiles">${tiles(LOADS.filter(x=>x.g===g), haul, "haul")}</div>`).join("");
+  $("tow").innerHTML = tiles(TOWS, tow, "tow");
+  const L = LOADS.find(x=>x.k===haul), W = TOWS.find(x=>x.k===tow), S = SIZES[L.size]; const [sw, sl] = L.size.split("x");
+  $("size").textContent = `${sw} × ${sl}`;
+  $("sizeSub").textContent = S.yard ? t.yard : `${S.ax==="tandem"?t.tandem:t.single} · ${t.ramp}`;
+  const up = L.wUp && L.w > S.w; const fw = up ? L.wUp : L.w; const sideRoom = Math.max(0, S.w - fw), backRoom = Math.max(0, S.l - L.len);
+  const snug = sideRoom < 6 || backRoom < 6; const loaded = L.wt + S.empty;
+  $("facts").innerHTML = [`<span class="fact ${snug?"warn":"ok"}">${snug?t.snug:t.fits}${up?" · "+t.chute:""}</span>`, `<span class="fact n">${t.room(sideRoom.toFixed(0), backRoom.toFixed(0))}</span>`, `<span class="fact n">${t.load((Math.round(L.wt/50)*50).toLocaleString("en-US"))}</span>`].join("");
+  $("why").textContent = L.why[lang];
+  $("towTxt").textContent = W.t[lang] + (lang==="en" ? ` Loaded, about ${(Math.round(loaded/50)*50).toLocaleString("en-US")} lb with the trailer.` : ` Cargado, unas ${(Math.round(loaded/50)*50).toLocaleString("en-US")} lb con el remolque.`);
+  // floor drawn to scale, hitch on the left
+  const pad = 26, scale = (640 - pad*2 - 56) / 192; const fx = pad + 56, fh = S.w*scale, fwid = S.l*scale, fy = 16 + (82*scale - fh)/2;
+  const ih = fw*scale, iw = L.len*scale, ix = fx + 6, iy = fy + (fh - ih)/2;
+  $("fit").setAttribute("aria-label", `${L[lang][0]} on a ${sw} by ${sl} trailer floor, drawn to scale`);
+  $("fit").innerHTML = `<line x1="${pad}" y1="${fy+fh/2}" x2="${fx}" y2="${fy+fh/2}" stroke="var(--muted)" stroke-width="3"/><circle cx="${pad}" cy="${fy+fh/2}" r="6" fill="var(--muted)"/>
+    <rect x="${fx}" y="${fy}" width="${fwid}" height="${fh}" rx="3" fill="var(--floor)" stroke="var(--floor-line)" stroke-width="2"/>
+    ${Array.from({length:Math.floor(S.w/6)},(_,i)=>`<line x1="${fx}" x2="${fx+fwid}" y1="${fy+(i+1)*6*scale}" y2="${fy+(i+1)*6*scale}" stroke="var(--floor-line)" stroke-width="1" opacity=".55"/>`).join("")}
+    <rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="8" fill="var(--item-fill)" stroke="var(--item)" stroke-width="3"/>
+    <text x="${ix+iw/2}" y="${iy+ih/2+6}" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">${L[lang][0]}</text>
+    <text x="${fx+fwid/2}" y="${fy+fh+22}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--muted)">${t.floor(S.w, S.l)} · ${lang==="en"?"drawn to scale":"dibujado a escala"}</text>`;
+  const lot = LOT.filter(u=>u.z===L.size);
+  $("h-haul").value = L.en[0]; $("h-tow").value = W.en[0]; $("h-rec").value = L.size; $("h-lang").value = lang;
+  $("lotT").textContent = t.lotT(`${sw}×${sl}`);
+  $("units").innerHTML = lot.length ? lot.map(u=>`<div class="unit"><b><a href="/#unit-${encodeURIComponent(u.id)}">${u.m}</a></b><span class="p">${money(u.p)} ${t.tax}${u.q?` · ${u.q} ${lang==="en"?"in stock":"disponibles"}`:""}</span>${u.was?`<span class="c">${t.clear(money(u.was))}</span>`:""}<span class="s">${t.stock} ${u.s}</span></div>`).join("") : `<p class="tow">${t.none}</p>`;
+  $("trust").innerHTML = t.trust.map(([a,b])=>`<div><b>${a}</b><span>${b}</span></div>`).join("");
+  $("faq").innerHTML = t.faq.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("");
+  $("privacy").innerHTML = `<h2 id="ph">${t.ptitle}</h2>${t.priv.map(([h,p])=>`<div><h3>${h}</h3><p>${p}</p></div>`).join("")}<p>${t.pupd}</p>`;
+  $("legal").innerHTML = t.legal.map(x=>`<p>${x}</p>`).join("");
+}
+document.addEventListener("click", e=>{
+  const h = e.target.closest("[data-haul]"); if(h){ haul = h.dataset.haul; render(); $("s2").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"}); return; }
+  const w = e.target.closest("[data-tow]"); if(w){ tow = w.dataset.tow; render(); $("s3").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"}); return; }
+});
+$("l-en").onclick = () => { lang = "en"; try{ localStorage.setItem("fit-lang","en"); }catch(_){} render(); };
+$("l-es").onclick = () => { lang = "es"; try{ localStorage.setItem("fit-lang","es"); }catch(_){} render(); };
+$("lead").addEventListener("submit", e=>{ e.preventDefault(); const t = T[lang];
+  const ok = $("f-name").value.trim() && $("f-phone").value.replace(/\D/g,"").length >= 10;
+  if(!ok){ $("err").textContent = t.need; $("err").hidden = false; return; }
+  const em = $("f-email").value.trim();
+  if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ $("err").textContent = t.bademail; $("err").hidden = false; return; }
+  $("err").hidden = true;
+  const fd = new FormData($("lead")); if(!em) fd.set("emailconsent", "no"); else if(!$("f-eok").checked) fd.set("emailconsent","no");
+  if(!$("f-ok").checked) fd.set("smsconsent","no");
+  const btn = $("lead").querySelector(".go"); btn.disabled = true;
+  fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:new URLSearchParams(fd).toString()})
+    .then(r=>{ if(!r.ok) throw 0; $("formIn").hidden = true; $("done").hidden = false; })
+    .catch(()=>{ btn.disabled = false; $("err").textContent = t.fail; $("err").hidden = false; });
+});
+render();
+</script>
+</body>
+</html>
