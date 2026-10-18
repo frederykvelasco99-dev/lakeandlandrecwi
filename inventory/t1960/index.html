@@ -97,9 +97,16 @@ details.tc p{padding:0 16px 14px;margin:0;font-size:13px;color:var(--muted)}
 .foot a{color:#CFCBBE}
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.6fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08)}
 .sticky a{display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;border-radius:6px;padding:13px 8px;font-size:16px}
+.ck-bar{position:fixed;left:10px;right:10px;bottom:84px;z-index:40;background:var(--panel);color:#fff;border-radius:8px;padding:12px 14px;display:none;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:13px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.ck-bar.show{display:flex}.ck-bar a{color:#F0C98A}
+.ck-bar button{border:0;border-radius:4px;padding:8px 14px;font:700 12px Inter,sans-serif;text-transform:uppercase;cursor:pointer}
+.ck-bar .y{background:var(--rust);color:#fff}.ck-bar .n{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+@media(min-width:861px){.ck-bar{bottom:12px;max-width:560px;left:auto}}
 .sticky .c{background:var(--rust);color:#fff}.sticky .t{border:2px solid var(--panel);color:var(--panel)}
 @media(min-width:861px){.sticky{display:none}body{padding-bottom:0}}
 </style>
+<script>window.LLR_ITEM={"item_id":"T1960","item_name":"2027 Trophy 5x10 Aluminum Trailer, Diamond Plate Sides, Single Axle, Stacked Ramp","price":3380,"item_category":"trailer"};</script>
+<script src="/js/llr-analytics.js" defer></script>
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -149,7 +156,10 @@ details.tc p{padding:0 16px 14px;margin:0;font-size:13px;color:var(--muted)}
 </main>
 <footer class="foot"><div class="wrap">Lake &amp; Land Rec LLC · 837 W 3rd St, Owen, WI 54460 · <a href="tel:7157974782">715-797-4782</a> · <a href="/">lakeandlandrec.com</a></div></footer>
 <div class="sticky"><a class="c" href="tel:7157974782">Call today</a><a class="t" href="sms:7157974782?&body=Hi%2C%20is%20stock%20T1960%20(5x10%20Aluminum%20Trailer%2C%20Diamond%20Plate%20Sides%2C%20Single%20Axle%2C%20Stacked%20Ramp)%20still%20available%3F">Text us</a></div>
+<div class="ck-bar" id="ckBar"><span>We use cookies to run this site and, if you allow it, to understand traffic. <a href="/#privacy">Privacy</a></span><span><button class="y" type="button" data-ck="accepted">Accept</button> <button class="n" type="button" data-ck="declined">Decline</button></span></div>
 <script>
+(function(){var b=document.getElementById('ckBar');var v=null;try{v=localStorage.getItem('llr_cookie_consent');}catch(e){}
+if(!v&&b)b.classList.add('show');document.querySelectorAll('[data-ck]').forEach(function(x){x.onclick=function(){var c=x.getAttribute('data-ck');if(window.llrConsent)llrConsent(c);else{try{localStorage.setItem('llr_cookie_consent',c);}catch(e){}}b.classList.remove('show');};});})();
 (function(){var t=document.getElementById('track');if(!t)return;var n=t.children.length,c=document.getElementById('count'),th=document.querySelectorAll('#thumbs button');
 function cur(){return Math.round(t.scrollLeft/t.clientWidth);}
 function go(i){i=(i+n)%n;t.scrollTo({left:i*t.clientWidth,behavior:'smooth'});}

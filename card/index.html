@@ -57,6 +57,8 @@
   .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:18px;padding:0 20px;line-height:1.5}
   [hidden]{display:none!important}
 </style>
+<script src="/js/llr-analytics.js" defer></script>
+<script src="/js/llr-forms.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -194,6 +196,8 @@
       "emailconsent": (document.getElementById("fEmail").value.trim() && document.getElementById("fEok").checked) ? "yes" : "no",
       "consentver": "card-2026-10-18", "lang": lang };
     var btn = document.getElementById("sendBtn"); btn.disabled = true;
+    if(window.llrEmailCopy) llrEmailCopy("card-connect", data);
+    if(window.llrTrack) llrTrack("generate_lead", {method:"form", form_name:"card-connect"});
     fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:enc(data)})
       .then(function(r){ if(!r.ok) throw new Error(r.status); document.getElementById("formBox").hidden = true; document.getElementById("done").style.display = "block"; })
       .catch(function(){ btn.disabled = false; err.textContent = lang==="es" ? "No se pudo enviar. Revisa tu señal o mándanos un texto." : "Couldn't send. Check your signal or just text us."; });
