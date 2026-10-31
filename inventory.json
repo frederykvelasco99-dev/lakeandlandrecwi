@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-31",
  "note": "Generated from the Lake & Land Rec CRM. Prices are plus tax.",
  "units": [
   {
@@ -1464,7 +1464,7 @@
    "price": "$4,980",
    "priceNum": 4980,
    "wasPrice": "",
-   "status": "In Stock",
+   "status": "Sold",
    "condition": "New",
    "vin": "5HBTU1429V1041909",
    "slug": "t1909",
